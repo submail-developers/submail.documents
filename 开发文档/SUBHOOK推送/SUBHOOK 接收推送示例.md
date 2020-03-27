@@ -11,7 +11,7 @@
 #### 代码示例
 
 
-```
+```php
 <?php
     $subhook = fopen('/log/subhook.log', 'a+');
     if ($subhook){
@@ -24,7 +24,7 @@
 #### 比对数字签名示例
 
 
-```
+```php
 <?php
     $key='my_subhook_key';
     $token=$_POST['token'];
@@ -37,3 +37,4 @@
         }
     }
 ```
+
