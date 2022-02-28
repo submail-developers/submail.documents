@@ -1,0 +1,378 @@
+# DEMO:MMS/Template
+
+<br>
+
+## 概览
+- 支持.Net版本：2.0以上 
+- 依赖三方库 Newtonsoft.Json.dll
+
+<br>
+
+
+## 代码示列
+```csharp
+using System;
+using System.Text;
+using System.Net;
+using System.IO;
+using System.Collections.Generic;
+using System.Web;
+using System.Security.Cryptography;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+namespace SUBMAILDEMO
+{
+	public class MMSTemplateDemo
+	{
+		private const string API_MMSTemplate = "https://api.mysubmail.com/mms/template.json";
+		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+
+		public void Template()
+		{
+			string appid = "";
+			string appkey = "";
+			string sign_type = "normal";
+
+			//get
+			//string template_id = "4zwjd4";
+			//string result = GetTemplate(appid, appkey, template_id, sign_type);
+
+			//post
+			//string mms_type = "mms";
+			//string mms_title = "彩信测试title";
+			//string mms_signature = "【测试彩信】";
+			//string mms_subject = "";
+			//Content content = new Content();
+			//content.addPage("image", "image/jpg", "/Users/submail/Desktop/text.jpg", "测试image类型");
+			//content.addPage("image", "image/jpg", "/Users/submail/Desktop/text.jpg");
+			//string mms_content = content.toJsonString();
+			//string result = PostTemplate(appid, appkey, sign_type, mms_type, mms_title, mms_signature, mms_subject, mms_content);
+
+			//put
+			//string template_id = "LcQua2";
+			//string mms_type = "mms";
+			//string mms_title = "xxx";
+			//string mms_signature = "【测试彩信2】";
+			//string mms_subject = "";
+			//Content content = new Content();
+			//content.addPage("image", "image/jpg", "/Users/submail/Desktop/text.jpg", "测试image2类型");
+			//content.addPage("image", "image/jpg", "/Users/submail/Desktop/text.jpg");
+			//string mms_content = content.toJsonString();
+			//string result = PutTemplate(appid, appkey, sign_type, template_id, mms_type, mms_title, mms_signature, mms_subject, mms_content);
+
+
+			//del
+			string template_id = "LcQua2";
+			string result = DeleteTemplate(appid, appkey, template_id, sign_type);
+
+
+			Console.WriteLine(result);
+
+		}
+
+
+		public string GetTemplate(string appid, string appkey, string template_id, string sign_type)
+		{
+
+			Dictionary<string, object> d = new Dictionary<string, object>();
+			d.Add("appid", appid);
+			d.Add("template_id", template_id);
+			string target_url = API_MMSTemplate + "?appid=" + appid + "&amp;template_id=" + template_id + "&amp;sign_type=" + sign_type;
+			//如果不使用加密方式或者signature传normal则signature参数传入appkey的值
+			if (sign_type.Equals("md5") || sign_type.Equals("sha1"))
+			{
+				string timestamp = JObject.Parse(HttpGet(API_Timestamp))["timestamp"].ToString();
+				d.Add("sign_type", sign_type);
+				d.Add("timestamp", timestamp);
+				if (sign_type.Equals("md5"))
+				{
+					target_url = target_url + "×tamp=" + timestamp + "&amp;signature=" + GetMD5Signature(FormatRequest(d), appid, appkey);
+				}
+				else
+				{
+					target_url = target_url + "×tamp=" + timestamp + "&amp;signature=" + GetSHA1Signature(FormatRequest(d), appid, appkey);
+				}
+			}
+			else
+			{
+				target_url = target_url + "&amp;signature=" + appkey;
+			}
+
+			string response = HttpGet(target_url);
+			return response;
+		}
+
+		public string PostTemplate(string appid, string appkey, string sign_type, string mms_type, string mms_title, string mms_signature, string mms_subject, string mms_content)
+		{
+			Dictionary<string, object> d = new Dictionary<string, object>();
+			d.Add("appid", appid);
+			//如果不使用加密方式或者signature传normal则signature参数传入appkey的值
+			if (sign_type.Equals("md5") || sign_type.Equals("sha1"))
+			{
+				string timestamp = JObject.Parse(HttpGet(API_Timestamp))["timestamp"].ToString();
+				d.Add("sign_type", sign_type);
+				d.Add("timestamp", timestamp);
+				if (sign_type.Equals("md5"))
+				{
+					d.Add("signature", GetMD5Signature(FormatRequest(d), appid, appkey));
+				}
+				else
+				{
+					d.Add("signature", GetSHA1Signature(FormatRequest(d), appid, appkey));
+				}
+			}
+			else
+			{
+				d.Add("signature", appkey);
+			}
+			d.Add("mms_type", mms_type);
+			d.Add("mms_title", mms_title);
+			d.Add("mms_signature", mms_signature);
+			d.Add("mms_subject", mms_subject);
+			d.Add("mms_content", mms_content);
+			return HttpMethod(API_MMSTemplate, d, "POST");
+		}
+
+
+		public string PutTemplate(string appid, string appkey, string sign_type, string template_id, string mms_type, string mms_title, string mms_signature, string mms_subject, string mms_content)
+		{
+			Dictionary<string, object> d = new Dictionary<string, object>();
+			d.Add("appid", appid);
+			d.Add("template_id", template_id);
+			//如果不使用加密方式或者signature传normal则signature参数传入appkey的值
+			if (sign_type.Equals("md5") || sign_type.Equals("sha1"))
+			{
+				string timestamp = JObject.Parse(HttpGet(API_Timestamp))["timestamp"].ToString();
+				d.Add("sign_type", sign_type);
+				d.Add("timestamp", timestamp);
+				if (sign_type.Equals("md5"))
+				{
+					d.Add("signature", GetMD5Signature(FormatRequest(d), appid, appkey));
+				}
+				else
+				{
+					d.Add("signature", GetSHA1Signature(FormatRequest(d), appid, appkey));
+				}
+			}
+			else
+			{
+				d.Add("signature", appkey);
+			}
+			d.Add("mms_type", mms_type);
+			d.Add("mms_title", mms_title);
+			d.Add("mms_signature", mms_signature);
+			d.Add("mms_subject", mms_subject);
+			d.Add("mms_content", mms_content);
+			return HttpMethod(API_MMSTemplate, d, "PUT");
+		}
+
+
+
+
+		public string DeleteTemplate(string appid, string appkey, string template_id, string sign_type)
+		{
+			Dictionary<string, object> d = new Dictionary<string, object>();
+			d.Add("appid", appid);
+			d.Add("template_id", template_id);
+
+			//如果不使用加密方式或者signature传normal则signature参数传入appkey的值
+			if (sign_type.Equals("md5") || sign_type.Equals("sha1"))
+			{
+				string timestamp = JObject.Parse(HttpGet(API_Timestamp))["timestamp"].ToString();
+				d.Add("sign_type", sign_type);
+				d.Add("timestamp", timestamp);
+
+				if (sign_type.Equals("md5"))
+				{
+					d.Add("signature", GetMD5Signature(FormatRequest(d), appid, appkey));
+				}
+				else
+				{
+					d.Add("signature", GetSHA1Signature(FormatRequest(d), appid, appkey));
+				}
+			}
+			else
+			{
+				d.Add("signature", appkey);
+			}
+			return HttpMethod(API_MMSTemplate, d, "DELETE");
+		}
+
+
+
+		public string HttpMethod(string url, Dictionary<string, Object> parameters, string method)
+		{
+			HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;//创建请求对象
+			request.Method = method;//请求方式
+			request.ContentType = "application/x-www-form-urlencoded";//链接类型
+																	  //构造查询字符串
+			if (!(parameters == null || parameters.Count == 0))
+			{
+				StringBuilder buffer = new StringBuilder();
+				bool first = true;
+				foreach (string key in parameters.Keys)
+				{
+
+					if (!first)
+					{
+						buffer.AppendFormat("&amp;{0}={1}", HttpUtility.UrlEncode(key, Encoding.UTF8), HttpUtility.UrlEncode((string)parameters[key], Encoding.UTF8));
+					}
+					else
+					{
+						buffer.AppendFormat("{0}={1}", HttpUtility.UrlEncode(key, Encoding.UTF8), HttpUtility.UrlEncode((string)parameters[key], Encoding.UTF8));
+						first = false;
+					}
+				}
+
+				Console.WriteLine("requestParam：" + buffer.ToString());
+				byte[] data = Encoding.UTF8.GetBytes(buffer.ToString());
+				//写入请求流
+				using (Stream stream = request.GetRequestStream())
+				{
+					stream.Write(data, 0, data.Length);
+					stream.Close();
+				}
+			}
+			HttpWebResponse hwp = request.GetResponse() as HttpWebResponse;
+			string response = GetResponseString(hwp);
+			hwp.Close();
+			return response;
+		}
+
+
+		//get请求
+		public string HttpGet(string url)
+		{
+			HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;//创建请求对象
+			request.Method = "GET";//请求方式 
+			request.ContentType = "application/x-www-form-urlencoded";
+			HttpWebResponse hwp = request.GetResponse() as HttpWebResponse;
+			string response = GetResponseString(hwp);
+			hwp.Close();
+			return response;
+		}
+
+
+
+		public string GetResponseString(HttpWebResponse webresponse)
+		{
+			using (Stream s = webresponse.GetResponseStream())
+			{
+				StreamReader reader = new StreamReader(s, Encoding.UTF8);
+				return reader.ReadToEnd();
+			}
+		}
+
+
+		//加密参数升序
+		public string FormatRequest(Dictionary<string, object> data)
+		{
+			StringBuilder builder = new StringBuilder();
+			if (data.Count > 0)
+			{
+				List<KeyValuePair<string, Object>> lst = new List<KeyValuePair<string, Object>>(data);
+				lst.Sort(delegate (KeyValuePair<string, object> s1, KeyValuePair<string, object> s2)
+								{
+									return s1.Key.CompareTo(s2.Key);
+								});
+				foreach (KeyValuePair<string, object> kvp in lst)
+				{
+					if (kvp.Value != null)
+					{
+						builder.Append(string.Format("{0}={1}&amp;", kvp.Key, kvp.Value));
+
+					}
+
+				}
+
+			}
+			string formatData = builder.ToString();
+			if (formatData.Length > 0)
+			{
+				return formatData.Substring(0, formatData.Length - 1);
+			}
+			return null;
+		}
+
+		//获取md5加密后的签名字符串
+		private string GetMD5Signature(string data, string appid, string appkey)
+		{
+			string signStr = string.Format("{0}{1}{2}{3}{4}", appid, appkey, data, appid, appkey);
+			MD5 md5 = new MD5CryptoServiceProvider();
+			byte[] fromData = Encoding.GetEncoding("utf-8").GetBytes(signStr);
+			byte[] targetData = md5.ComputeHash(fromData);
+			StringBuilder sBuilder = new StringBuilder();
+			for (int i = 0; i < targetData.Length; i++)
+			{
+				sBuilder.Append(targetData[i].ToString("x2"));
+			}
+			return sBuilder.ToString();
+		}
+
+		//获取sha1加密后的签名字符串
+		private string GetSHA1Signature(string data, string appid, string appkey)
+		{
+			string signStr = string.Format("{0}{1}{2}{3}{4}", appid, appkey, data, appid, appkey);
+			SHA1 sha1 = new SHA1CryptoServiceProvider();
+			byte[] fromData = Encoding.GetEncoding("utf-8").GetBytes(signStr);
+			byte[] targetData = sha1.ComputeHash(fromData);
+			StringBuilder sBuilder = new StringBuilder();
+			for (int i = 0; i < targetData.Length; i++)
+			{
+				sBuilder.Append(targetData[i].ToString("x2"));
+			}
+			return sBuilder.ToString();
+		}
+
+
+
+	}
+	class Content
+	{
+		private JArray jarray = new JArray();
+
+		public void addPage(string media_type, string type, string media_path, string text)
+		{
+
+			JObject json_data = new JObject();
+			JObject json_media = new JObject();
+			json_media.Add("data", FileToBase64(media_path));
+			json_media.Add("type", type);
+			json_data.Add(media_type, json_media);
+			if (text != null)
+			{
+				json_data.Add("text", text);
+			}
+			jarray.Add(json_data);
+		}
+
+		public void addPage(string media_type, string type, string media_path)
+		{
+			addPage(media_type, type, media_path, null);
+		}
+
+		public String toJsonString()
+		{
+			return jarray.ToString();
+		}
+
+		public string FileToBase64(string filePath)
+		{
+			string strRet = "";
+			try
+			{
+				FileStream fs = new FileStream(filePath, FileMode.Open);
+				byte[] bt = new byte[fs.Length];
+				fs.Read(bt, 0, bt.Length);
+				strRet = Convert.ToBase64String(bt);
+				fs.Close();
+			}
+			catch (Exception ex)
+			{
+				strRet = null;
+			}
+			return strRet;
+		}
+	}
+}
+```

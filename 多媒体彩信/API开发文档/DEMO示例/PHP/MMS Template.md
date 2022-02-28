@@ -1,0 +1,379 @@
+# DEMO:MMS/Template
+
+<br>
+
+## 代码示例
+
+<br>
+
+```
+<?php
+    /*****************
+     * 非加密请求 示例代码
+     ******************/
+    //---------------------------------get  获取彩信模板数据-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //模板ID   彩信-创建/管理彩信模板中获得
+    $appid = '6***3';                                                               //appid参数
+    $appkey = '5d****************************58';                                   //appkey参数
+    $template_id = "F***U";                                                         //彩信模板ID
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'template_id'   => $template_id
+    );
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => "https://api.mysubmail.com/mms/template?".http_build_query($post_data),
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_POST            => 0,
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+    //---------------------------------post  创建彩信模板-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //生成模板如下
+    //  第一页：彩信1111...   第二页：彩信222...
+    $appid = '6***3';                                                                   //appid参数
+    $appkey = '5d****************************58';                                       //appkey参数
+    $title = '彩信模板标题';                                                              //彩信模板标题
+    $signature = '彩信模板签名';                                                          //彩信模板签名
+    $subject = '彩信模板主题';                                                            //彩信模板主题
+    $content = json_encode(array(['text'=> '彩信1111...'],['text'=> '彩信222...']));     //彩信正文
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'mms_title'     => $title,
+        'mms_signature' => $signature,
+        'mms_subject'   => $subject,
+        'mms_content'   => $content
+    );
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/mms/template',
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_POST            => 1,
+        CURLOPT_POSTFIELDS      => $post_data
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+
+    //---------------------------------put 更新彩信模板-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //模板ID   彩信-创建/管理彩信模板中获得
+    //生成模板如下
+    //  第一页：彩信1111...   第二页：彩信222...
+    $appid = '6***3';                                                                   //appid参数
+    $appkey = '5d****************************58';                                       //appkey参数
+    $title = '彩信模板标题';                                                              //彩信模板标题
+    $signature = '彩信模板签名';                                                          //彩信模板签名
+    $subject = '彩信模板主题';                                                            //彩信模板主题
+    $template_id = 'F***U';                                                             //彩信模板ID
+    $content = json_encode(array(['text'=> '彩信1111...'],['text'=> '彩信222...']));     //彩信正文
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'mms_title'     => $title,
+        'mms_signature' => $signature,
+        'mms_subject'   => $subject,
+        'template_id'   => $template_id,
+        'mms_content'   => $content
+    );
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/mms/template',
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_CUSTOMREQUEST   => 'PUT',
+        CURLOPT_POSTFIELDS      => http_build_query($post_data) ,
+        CURLOPT_HTTPHEADER      => array("Content-Type: application/x-www-form-urlencoded")
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+
+    //---------------------------------delete 删除彩信模板-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //模板ID   彩信-创建/管理彩信模板中获得
+    $appid = '6***3';                                                                   //appid参数
+    $appkey = '5d****************************58';                                       //appkey参数
+    $template_id = 'F***U';                                                             //彩信模板ID
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'template_id'   => $template_id,
+    );
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL => 'https://api.mysubmail.com/mms/template' ,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_CUSTOMREQUEST => 'DELETE',
+        CURLOPT_POSTFIELDS => http_build_query($post_data),
+        CURLOPT_HTTPHEADER => array("Content-Type: application/x-www-form-urlencoded")
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+
+    /*****************
+     * 加密请求 示例代码
+     ******************/
+    //---------------------------------get  获取彩信模板数据-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //模板ID   彩信-创建/管理彩信模板中获得
+    $appid = '6***3';                                                               //appid参数
+    $appkey = '5d****************************58';                                   //appkey参数
+    $template_id = "F***U";                                                         //彩信模板ID
+
+    //通过接口获取时间戳
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/service/timestamp.json',
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_POST            => 0
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+    $timestamp = $output['timestamp'];
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'template_id'   => $template_id,
+        'sign_type'     => 'md5',
+        'timestamp'     => $timestamp
+    );
+
+    $temp = $post_data;
+    ksort($temp);
+    reset($temp);
+    unset($temp['signature']);
+    $str = "";
+    foreach ($temp as $key => $value) {
+        $str.=$key."=".$value."&amp;";
+    }
+    $str = substr($str,0,count($str)-2);
+    $post_data['signature'] = md5($appid.$appkey.$str.$appid.$appkey);
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => "https://api.mysubmail.com/mms/template?".http_build_query($post_data),
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_POST            => 0,
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+
+    //---------------------------------post  创建彩信模板-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //生成模板如下
+    //  第一页：彩信1111...   第二页：彩信222...
+    $appid = '6***3';                                                                   //appid参数
+    $appkey = '5d****************************58';                                       //appkey参数
+    $title = '彩信模板标题';                                                              //彩信模板标题
+    $signature = '彩信模板签名';                                                          //彩信模板签名
+    $subject = '彩信模板主题';                                                            //彩信模板主题
+    $content = json_encode(array(['text'=> '彩信1111...'],['text'=> '彩信222...']));     //彩信正文
+
+    //通过接口获取时间戳
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/service/timestamp.json',
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_POST            => 0 ,
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+    $timestamp = $output['timestamp'];
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'sign_type'     => 'md5',
+        'timestamp'     => $timestamp,
+        'mms_title'     => $title,
+        'mms_signature' => $signature ,
+        'mms_subject'   => $subject ,
+        'mms_content'   => $content
+    );
+
+    $temp = $post_data;
+    ksort($temp);
+    reset($temp);
+    unset($temp['signature']);
+    $str = "";
+    foreach ($temp as $key => $value) {
+        $str.=$key."=".$value."&amp;";
+    }
+    $str = substr($str,0,count($str)-2);
+    //生成签名
+    $post_data['signature'] = md5($appid.$appkey.$str.$appid.$appkey);
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/mms/template',
+        CURLOPT_RETURNTRANSFER  => 1,
+        CURLOPT_POST            => 1 ,
+        CURLOPT_POSTFIELDS      => $post_data
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+
+    //---------------------------------put 更新彩信模板-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //模板ID   彩信-创建/管理彩信模板中获得
+    //生成模板如下
+    //  第一页：彩信1111...   第二页：彩信222...
+    $appid = '6***3';                                                                   //appid参数
+    $appkey = '5d****************************58';                                       //appkey参数
+    $title = '彩信模板标题';                                                              //彩信模板标题
+    $signature = '彩信模板签名';                                                          //彩信模板签名
+    $subject = '彩信模板主题';                                                            //彩信模板主题
+    $template_id = 'F***U';                                                             //彩信模板ID
+    $content = json_encode(array(['text'=> '彩信1111...'],['text'=> '彩信222...']));     //彩信正文
+
+    //通过接口获取时间戳
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/service/timestamp.json' ,
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_POST            => 0 ,
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+    $timestamp = $output['timestamp'];
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'mms_title'     => $title,
+        'mms_signature' => $signature,
+        'mms_subject'   => $subject,
+        'template_id'   => $template_id,
+        'mms_content'   => $content,
+        'sign_type'     => 'md5',
+        'timestamp'     => $timestamp
+    );
+
+    $temp = $post_data;
+    ksort($temp);
+    reset($temp);
+    unset($temp['signature']);
+    $str = "";
+    foreach ($temp as $key => $value) {
+        $str.=$key."=".$value."&amp;";
+    }
+    $str = substr($str,0,-1);
+    //生成签名
+    $post_data['signature'] = md5($appid.$appkey.$str.$appid.$appkey);
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/mms/template',
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_CUSTOMREQUEST   => 'PUT',
+        CURLOPT_POSTFIELDS      => http_build_query($post_data),
+        CURLOPT_HTTPHEADER      => array("Content-Type: application/x-www-form-urlencoded")
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+
+
+    //---------------------------------delete 删除彩信模板-------------------------------------
+    //appid参数 appkey参数在     彩信-创建/管理AppID中获取
+    //模板ID   彩信-创建/管理彩信模板中获得
+    $appid = '6***3';                                                                   //appid参数
+    $appkey = '5d****************************58';                                       //appkey参数
+    $template_id = 'F***U';                                                             //彩信模板ID
+
+    //通过接口获取时间戳
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/service/timestamp.json' ,
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_POST            => 0 ,
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+    $timestamp = $output['timestamp'];
+
+    $post_data = array(
+        'appid'         => $appid,
+        'signature'     => $appkey,
+        'template_id'   => $template_id,
+        'sign_type'     => 'md5',
+        'timestamp'     => $timestamp
+    );
+
+    $temp = $post_data;
+    ksort($temp);
+    reset($temp);
+    unset($temp['signature']);
+    $str = "";
+    foreach ($temp as $key => $value) {
+        $str.=$key."=".$value."&amp;";
+    }
+    $str = substr($str,0,-1);
+    //生成签名
+    $post_data['signature'] = md5($appid.$appkey.$str.$appid.$appkey);
+
+    $ch = curl_init();
+    curl_setopt_array($ch , array(
+        CURLOPT_URL             => 'https://api.mysubmail.com/mms/template' ,
+        CURLOPT_RETURNTRANSFER  => 1 ,
+        CURLOPT_CUSTOMREQUEST   => 'DELETE' ,
+        CURLOPT_POSTFIELDS      => http_build_query($post_data) ,
+        CURLOPT_HTTPHEADER      => array("Content-Type: application/x-www-form-urlencoded")
+    ));
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $output = json_decode($output,true);
+
+    print_r($output);
+
+
+```

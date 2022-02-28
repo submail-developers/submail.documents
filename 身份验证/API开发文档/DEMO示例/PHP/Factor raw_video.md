@@ -1,0 +1,51 @@
+<?php
+
+    /*****************
+     * 示例代码
+     ******************/
+    //appid参数 appkey参数在     身份认证-创建/管理AppID中获取
+    $appid      = '6***3';                                                                  //appid参数
+    $appkey     = '5d****************************58';                                       //appkey参数
+    $timestamp  = time();                                                                   //获取当前时间戳
+    $motions    = 'BLINK';                                                                  //用户动作序列，BLINK 眨眼;MOUTH 张嘴; NOD 点头; YAW 摇头
+    $complexity = '0';                                                                      //活体检测通过的难易程度，默认为 0， 0:简单模式;1: 正常模式;2:困难模式;3:地狱模式
+    $image_flag = 'Y';                                                                      //是否需要返回照片，Y/N
+    $video      = curl_file_create('***/***/***.mp4');                              //视频文件
+    
+    $temp_data = array(
+        'appkey'    => $appkey ,
+        'timestamp' => $timestamp,
+    );
+    //生成签名
+    ksort($temp_data);
+    reset($temp_data);
+    $signature = hash('sha256', http_build_query($temp_data));
+    
+    $post_data = array(
+        'appid'     => $appid,
+        'timestamp' => $timestamp,
+        'signature' => $signature,
+        'motions'   => $motions,
+        'complexity'=> $complexity,
+        'image_flag'=> $image_flag,
+        'video'     => $video,
+    );
+
+
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_URL             => "https://tpa.mysubmail.com/factor/raw_video",
+        CURLOPT_RETURNTRANSFER  => true,
+        CURLOPT_HTTP_VERSION    => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST   => "POST",
+        CURLOPT_POSTFIELDS      => $post_data,
+    ));
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+    curl_close($curl);
+    
+    if ($err) {
+        echo "cURL Error #:" . $err;
+    } else {
+        echo $response;
+    }

@@ -1,0 +1,41 @@
+# DEMEO:InternationalSMS/Verifyphonenumber
+
+###示例代码
+<br>
+
+####依赖
+```
+import (
+	"bytes"
+	"fmt"
+	"io/ioutil"
+	"mime/multipart"
+	"net/http"
+)
+```
+
+
+####配置信息
+```
+const (
+	API    = "https://api.mysubmail.com/service/verifyphonenumber"
+)
+```
+
+
+####代码示例
+```
+   /postdata := make(map[string]string)
+	postdata["to"] = "+998974050307"
+	body := &amp;bytes.Buffer{}
+	writer := multipart.NewWriter(body)
+	for key, val := range postdata {
+		_ = writer.WriteField(key, val)
+	}
+	contentType := writer.FormDataContentType()
+	writer.Close()
+	resp, _ := http.Post(API, contentType, body)
+	result, _ := ioutil.ReadAll(resp.Body)
+	fmt.Println(string(result))
+
+```

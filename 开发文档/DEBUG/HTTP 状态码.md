@@ -1,8 +1,0 @@
-## API HTTP 状态码
-
-
-http 状态 | 描述
----|---
-2XX | API 请求成功 （e.g.  http return code : 200  ）
-4XX | 请求参数发生错误，请查看返回的错误代码和描述 （e.g. http return code : 400  ）
-5XX | API 请求不成功或服务器发生错误，请稍后再试 （e.g. http return code : 500 ）
