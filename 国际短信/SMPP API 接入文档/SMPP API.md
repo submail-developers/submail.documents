@@ -37,7 +37,6 @@ SUBMAIL SMPP 协议基于 SMPP 3.4 通讯协议。
 | BIND_TRANSMITTER | 发送器 TX 连接/登录         |
 | BIND_RECEIVER    | 接收器 RX 连接/登录         |
 | BIND_TRANSCEIVER | 收发器 TRX 连接/登录        |
-| CMPP_DELIVER     | 回执/短消息上行             |
 | UNBIND           | 链路拆除                    |
 | GENERIC_NACK     | *generic_nack* 无效指令应答 |
 | SUBMIT_SM        | 短消息发送                  |
