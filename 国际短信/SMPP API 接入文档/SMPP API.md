@@ -76,3 +76,23 @@ SUBMAIl SMPP 网关支持长短信发送，支持 UDHI 模式和 **message_paylo
 
 **message_payload** 最大支持 1000 字
 
+
+
+## 错误/状态码
+
+SUBMAIL SMPP 网关除透传短消息实际状态外会有一些特殊的状态码，如模板审核拒绝、频率超限、余额不足等
+
+| 状态码  | 交互方式   | 描述                                                         |
+| ------- | ---------- | ------------------------------------------------------------ |
+| SUBERRL | DELIVER_SM | 提交失败（长短信并包超时）                                   |
+| NONECHN | DELIVER_SM | 不支持的国家或地区                                           |
+| OVERRUN | DELIVER_SM | 短信正文超过最大长度限制（1000字）                           |
+| RGBLOCK | DELIVER_SM | 用户屏蔽区                                                   |
+| BEYONDD | DELIVER_SM | SMPP应用请求超限（请前往 国际短信-》创建/管理 APPID 页面设置发送限制参数） |
+| FRQEBYD | DELIVER_SM | 发送超限（相同内容同一天内对同一手机号发送超过15条）         |
+| UBLOCKD | DELIVER_SM | 自定义黑名单 （请前往短信-》创建/管理 APPID 页面设置或管理黑名单） |
+| REJECTD | DELIVER_SM | 审核拒绝<br />此状态与网关REJECTD状态码一致，如遇相同内容全部返回该错误码，则模板审核被拒，请前往 短信-》创建 /管理模板页面查看具体驳回原因，修改后重新提交该模板进行审核即可正常发送 |
+| BALANCE | DELIVER_SM | 余额不足                                                     |
+| BLOCKED | DELIVER_SM | 系统屏蔽                                                     |
+| BEYONDT | DELIVER_SM | 模板发送超限；请前往 国际短信-》创建 /管理模板页面 更改此模板发送限制 |
+

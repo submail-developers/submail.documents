@@ -61,3 +61,26 @@ SUBMAIl CMPP 网关支持长短信发送，最大字符限制为1000 字，包�
 - byte 6 : NN, 当前短信的序号。如果当前短信是这批短信中的第一条的值是1，第二条的值是2。
 
 示例：05 00 03 39 02 01
+
+
+
+## 错误/状态码
+
+SUBMAIL CMPP 网关除透传短消息实际状态外会有一些特殊的状态码，如模板审核拒绝、频率超限、余额不足等
+
+| 状态码  | 交互方式     | 描述                                                         |
+| ------- | ------------ | ------------------------------------------------------------ |
+| SUBERRL | CMPP_DELIVER | 提交失败（长短信并包超时）                                   |
+| SIGNERR | CMPP_DELIVER | 短信正文未包含短信签名，或短信签名没有前置                   |
+| CONTERR | CMPP_DELIVER | 短信正文超过最大长度限制（1000字）                           |
+| BEYONDD | CMPP_DELIVER | CMPP应用请求超限（请前往短信-》创建/管理 APPID 页面设置发送限制参数） |
+| FRQEBYD | CMPP_DELIVER | 发送超限（相同内容同一天内对同一手机号发送超过15条）         |
+| UBLOCKD | CMPP_DELIVER | 自定义黑名单 （请前往短信-》创建/管理 APPID 页面设置或管理黑名单） |
+| REJECTD | CMPP_DELIVER | 审核拒绝<br />此状态与网关REJECTD状态码一致，如遇相同内容全部返回该错误码，则模板审核被拒，请前往 短信-》创建 /管理模板页面查看具体驳回原因，修改后重新提交该模板进行审核即可正常发送 |
+| BALANCU | CMPP_DELIVER | 通用/运营类短信余额不足                                      |
+| BALANCT | CMPP_DELIVER | 事务类短信余额不足                                           |
+| NOROUTE | CMPP_DELIVER | 无路由                                                       |
+| BLOCKED | CMPP_DELIVER | 系统屏蔽                                                     |
+| BEYONDT | CMPP_DELIVER | 模板发送超限；请前往 短信-》创建 /管理模板页面 更改此模板发送限制 |
+| UNSUBED | CMPP_DELIVER | 用户已退订；请前往 短信-》上行交互页面设置取消退订规则       |
+
