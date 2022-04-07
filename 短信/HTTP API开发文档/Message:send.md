@@ -25,6 +25,7 @@
 <br>
 
 ###  **支持格式**
+
 <br>
 
 | 格式   | URL                                                        |
@@ -40,9 +41,9 @@
 ### **http 请求方式**
 <br>
 
-| 请求方式    | content-type设置                                             |
-| ----------- | ------------------------------------------------------------ |
-| `http post` | `multipart/form-data、x-www-form-urlencoded、application/json` |
+| 请求方式     | content-type设置                                             |
+| ------------ | ------------------------------------------------------------ |
+| `post`,`get` | `multipart/form-data、x-www-form-urlencoded、application/json` |
 
 ------
 
@@ -50,6 +51,7 @@
 <br>
 
 ### **是否需要授权**
+
 <br>
 
 ##### 是
