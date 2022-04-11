@@ -1,4 +1,4 @@
-# DEMEO:InternationalSMS/Balance
+# DEMO:InternationalSMS/Balance
 
 - 支持JDK版本：1.5以上 
 - 依赖的jar包：httpclient-4.5.3.jar、httpcore-4.4.14.jar、commons-logging1.1.1.jar、fastjson-1.2.75.jar
@@ -27,7 +27,7 @@
 </dependency>
 ```
 
-## 代码示列
+## 代码示例
 ### IntersmsBalanceDemo
 ```java
 package com.submail.demo.intersms;
@@ -46,8 +46,8 @@ import java.io.IOException;
 import java.util.TreeMap;
 
 public class IntersmsBalance {
-    public static final String TIMESTAMP = "https://api.mysubmail.com/service/timestamp";
-    private static final String URL = "https://api.mysubmail.com/balance/internationalsms.json";
+    public static final String TIMESTAMP = "https://api-v4.mysubmail.com/service/timestamp";
+    private static final String URL = "https://api-v4.mysubmail.com/balance/internationalsms.json";
     public static final String TYPE_MD5 = "md5";
     public static final String TYPE_SHA1 = "sha1";
 

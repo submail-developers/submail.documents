@@ -1,4 +1,4 @@
-##  API: Flashsms/xsend
+##  API: FlashSMS/XSend
 
 <br>
 
@@ -18,9 +18,7 @@
 ### **URL**
 <br>
 
-##### `<主> https://api.mysubmail.com/flashsms/xsend`
-
-##### `<备> https://api.submail.cn/flashsms/xsend`
+##### `https://api-v4.mysubmail.com/flashsms/xsend`
 
 ------
 <br>
@@ -29,10 +27,10 @@
 
 <br>
 
-| 格式   | URL                                                     |
-| ------ | ------------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/flashsms/xsend.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/flashsms/xsend.xml`          |
+| 格式   | URL                                                        |
+| ------ | ---------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/flashsms/xsend.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/flashsms/xsend.xml`          |
 
 ------
 <br>
@@ -83,7 +81,7 @@
 ##### POST URL
 
 ```
-https://api.mysubmail.com/flashsms/xsend.json
+https://api-v4.mysubmail.com/flashsms/xsend.json
 ```
 
 <br>

@@ -4,7 +4,7 @@
 	var crypto = require('crypto');
 	var appid = "input your appid";
 	var appkey = "input your appkey";
-	var api = "https://api.mysubmail.com/balance/mail";
+	var api = "https://api-v4.mysubmail.com/balance/mail";
 	
 	//生成加密签名
 	
@@ -47,7 +47,7 @@
 	//加密示例
 	
 	request({
-	    uri: "https://api.mysubmail.com/service/timestamp",
+	    uri: "https://api-v4.mysubmail.com/service/timestamp",
 	    method: 'GET'
 	}, function(error, response, body) {
 	    var result = JSON.parse(body);

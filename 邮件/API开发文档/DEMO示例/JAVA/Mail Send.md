@@ -50,8 +50,8 @@ import java.io.IOException;
 import java.util.TreeMap;
 
 public class MailSendDemo {
-    public static final String TIMESTAMP = "https://api.mysubmail.com/service/timestamp";
-    private static final String URL = "https://api.mysubmail.com/mail/send";
+    public static final String TIMESTAMP = "https://api-v4.mysubmail.com/service/timestamp";
+    private static final String URL = "https://api-v4.mysubmail.com/mail/send";
     public static final String TYPE_MD5 = "md5";
     public static final String TYPE_SHA1 = "sha1";
 

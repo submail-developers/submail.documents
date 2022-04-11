@@ -52,8 +52,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class MMSTemplate {
-    public static final String TIMESTAMP = "https://api.mysubmail.com/service/timestamp";
-    private static final String URL = "https://api.mysubmail.com/mms/template.json";
+    public static final String TIMESTAMP = "https://api-v4.mysubmail.com/service/timestamp";
+    private static final String URL = "https://api-v4.mysubmail.com/mms/template.json";
     public static final String TYPE_MD5 = "md5";
     public static final String TYPE_SHA1 = "sha1";
 

@@ -4,13 +4,11 @@
 ### **概览**
 
 <br>
-本文档中列出的所有 API 基础调用 URL 是 `https://api.mysubmail.com` （ 如 API：`mail/xsend` 实际请求 URL `https://api.mysubmail.com/mail/xsend` ） 。
+本文档中列出的所有 API 基础调用 URL 是 `https://api-v4.mysubmail.com` （ 如 API：`mail/xsend` 实际请求 URL `https://api-v4.mysubmail.com/mail/xsend` ） 。
 SUBMAIL 支持 `json` (默认) 和 `xml` 格式，如果你想要 API 返回码的格式为 `xml`，请在 完整 URL 的末尾加上 `.xml`。
 
 API URL 规则 ：
-##### `<主> https://api.mysubmail.com/[model]/[function].[format]`  
-##### `<备> https://api.submail.cn/[model]/[function].[format]`  
-
+##### `https://api-v4.mysubmail.com/[model]/[function].[format]`  
 
 
 ---

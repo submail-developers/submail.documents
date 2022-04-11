@@ -16,9 +16,7 @@
 
 <br>
 
-##### `<主> https://api.mysubmail.com/service/status`
-
-##### `<备> https://api.submail.cn/service/status`
+##### `https://api-v4.mysubmail.com/service/status`
 
 ---
 
@@ -30,8 +28,8 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/service/status.json `**（默认）** |
-| `xml`  | `https://api.mysubmail.com/service/status.xml`               |
+| `json` | `https://api-v4.mysubmail.com/service/status.json `**（默认）** |
+| `xml`  | `https://api-v4.mysubmail.com/service/status.xml`            |
 
 ---
 <br>
@@ -80,7 +78,6 @@
       "runtime":0.024
 }
 ```
-
 
 ------
 

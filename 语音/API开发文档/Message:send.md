@@ -1,4 +1,4 @@
-##  API: Voice/send
+##  API: Voice/Send
 <br>
 
 ### **概览**
@@ -15,9 +15,8 @@
 
 <br>
 
-##### `<主>  https://api.mysubmail.com/voice/send`
+##### `https://api-v4.mysubmail.com/voice/send`
 
-##### `<备> https://api.submail.cn/voice/send`
 ---
 <br>
 
@@ -25,10 +24,10 @@
 
 <br>
 
-| 格式   | URL                                                 |
-| ------ | --------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/voice/send.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/voice/send.xml`          |
+| 格式   | URL                                                    |
+| ------ | ------------------------------------------------------ |
+| `json` | `https://api-v4.mysubmail.com/voice/send.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/voice/send.xml`          |
 
 ---
 
@@ -85,7 +84,7 @@
 ##### POST URL
 
 ```
-https://api.mysubmail.com/voice/send.json
+https://api-v4.mysubmail.com/voice/send.json
 ```
 
 
@@ -125,7 +124,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=17788xxxxxxxx&amp;content=亲爱爱顾客，快递员：XXX，因无法进入单元，已将您的快递包裹送至您小区的物业，请您及时取回，感谢您的惠顾&amp;signature=your_app_key' https://api.mysubmail.com/voice/send.json
+curl -d 'appid=your_app_id&amp;to=17788xxxxxxxx&amp;content=亲爱爱顾客，快递员：XXX，因无法进入单元，已将您的快递包裹送至您小区的物业，请您及时取回，感谢您的惠顾&amp;signature=your_app_key' https://api-v4.mysubmail.com/voice/send.json
 ```
 
 
@@ -174,7 +173,6 @@ curl -d 'appid=your_app_id&amp;to=17788xxxxxxxx&amp;content=亲爱爱顾客，�
       "msg":"error message"
 }
 ```
-
 
 ---
 

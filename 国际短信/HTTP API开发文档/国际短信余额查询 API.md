@@ -1,4 +1,4 @@
-## API: balance/internationalsms
+## API: Balance/InternationalSMS
 
 <br>
 
@@ -18,9 +18,7 @@
 
 <br>
 
-##### `<主> https://api.mysubmail.com/balance/internationalsms`
-
-##### `<备> https://api.submail.cn/balance/internationalsms`
+##### `https://api-v4.mysubmail.com/balance/internationalsms`
 
 ---
 
@@ -32,8 +30,8 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/balance/internationalsms.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/balance/internationalsms.xml`     |
+| `json` | `https://api-v4.mysubmail.com/balance/internationalsms.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/balance/internationalsms.xml`  |
 
 <br>
 

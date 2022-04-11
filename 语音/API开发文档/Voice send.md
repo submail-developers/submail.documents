@@ -1,4 +1,4 @@
-## API: Message/send
+## API: Message/Send
 
 <br>
 
@@ -14,11 +14,10 @@
 
 <br>
 
-### ** URL**
+### URL
 <br>
 
-#####  `<主> https://api.mysubmail.com/message/send`
-#####  `<备> https://api.submail.cn/message/send`
+#####  `https://api-v4.mysubmail.com/message/send`
 ------
 
 
@@ -28,10 +27,10 @@
 ###  **支持格式**
 <br>
 
-| 格式   | URL                                                        |
-| ------ | ---------------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/message/send.json `**（默认）** |
-| `xml`  | `https://api.mysubmail.com/message/send.xml`               |
+| 格式   | URL                                                          |
+| ------ | ------------------------------------------------------------ |
+| `json` | `https://api-v4.mysubmail.com/message/send.json `**（默认）** |
+| `xml`  | `https://api-v4.mysubmail.com/message/send.xml`              |
 
 ------
 
@@ -91,7 +90,7 @@
 ##### POST URL
 
 ```
-https://api.mysubmail.com/message/send.json
+https://api-v4.mysubmail.com/message/send.json
 ```
 
 <br>
@@ -120,7 +119,6 @@ appid=your_app_id
 }
 ```
 
-
 ---
 
 <br>
@@ -132,7 +130,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;content=【SUBMAIL】您的短信验证码：4438，请在10分钟内输入。&amp;signature=your_app_key' https://api.mysubmail.com/message/send.json
+curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;content=【SUBMAIL】您的短信验证码：4438，请在10分钟内输入。&amp;signature=your_app_key' https://api-v4.mysubmail.com/message/send.json
 ```
 
 <br>
@@ -148,7 +146,6 @@ curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;content=【SUBMAIL】您的短
     "transactional_sms_credits": "0"
 }
 ```
-
 
 ---
 

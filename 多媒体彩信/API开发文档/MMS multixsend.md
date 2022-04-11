@@ -1,4 +1,4 @@
-## API: MMS/multixsend
+## API: MMS/MultiXSend
 
 <br>
 
@@ -76,9 +76,7 @@ signature=your_app_key
 
 <br>
 
-##### `<主> https://api.mysubmail.com/mms/multixsend`
-
-##### `<备>https://api.submail.cn/mms/multixsend`
+##### `https://api-v4.mysubmail.com/mms/multixsend`
 
 ---
 
@@ -88,10 +86,10 @@ signature=your_app_key
 
 <br>
 
-| 格式   | URL                                                        |
-| ------ | ---------------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/mms/multixsend.json` **(默认)** |
-| `xml`  | `https://api.mysubmail.com/mms/multixsend.xml`             |
+| 格式   | URL                                                          |
+| ------ | ------------------------------------------------------------ |
+| `json` | `https://api-v4.mysubmail.com/mms/multixsend.json` **(默认)** |
+| `xml`  | `https://api-v4.mysubmail.com/mms/multixsend.xml`            |
 
 ---
 
@@ -151,7 +149,7 @@ signature=your_app_key
 ##### POST URL
 
 ```
-https://api.mysubmail.com/mms/multixsend.json
+https://api-v4.mysubmail.com/mms/multixsend.json
 ```
 
 <br>

@@ -1,6 +1,8 @@
 # DEMO:Voice/MultiXSend
 
-##代码示例
+<br>
+
+## 代码示例
 
 ```
     /*****************
@@ -33,7 +35,7 @@
 
     $ch = curl_init();
     curl_setopt_array($ch , array(
-        CURLOPT_URL             => 'https://api.mysubmail.com/voice/multixsend',
+        CURLOPT_URL             => 'https://api-v4.mysubmail.com/voice/multixsend',
         CURLOPT_RETURNTRANSFER  => 1,
         CURLOPT_POST            => 1,
         CURLOPT_POSTFIELDS      => $post_data
@@ -70,7 +72,7 @@
     //通过接口获取时间戳
     $ch = curl_init();
     curl_setopt_array($ch , array(
-        CURLOPT_URL             => 'https://api.mysubmail.com/service/timestamp.json',
+        CURLOPT_URL             => 'https://api-v4.mysubmail.com/service/timestamp.json',
         CURLOPT_RETURNTRANSFER  => 1,
         CURLOPT_POST            => 0
     ));
@@ -101,7 +103,7 @@
 
     $ch = curl_init();
     curl_setopt_array($ch , array(
-        CURLOPT_URL             => 'https://api.mysubmail.com/voice/multixsend' ,
+        CURLOPT_URL             => 'https://api-v4.mysubmail.com/voice/multixsend' ,
         CURLOPT_RETURNTRANSFER  => 1 ,
         CURLOPT_POST            => 1 ,
         CURLOPT_POSTFIELDS      => $post_data,

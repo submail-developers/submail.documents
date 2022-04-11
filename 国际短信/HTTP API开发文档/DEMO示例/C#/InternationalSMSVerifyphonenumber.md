@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/Verifyphonenumber
+# DEMO:InternationalSMS/Verifyphonenumber
 
 <br>
 
@@ -8,7 +8,7 @@
 
 <br>
 
-## 代码示列
+## 代码示例
 
 ```csharp
 using System;
@@ -23,8 +23,8 @@ namespace SUBMAILDEMO2021
 {
 	public class IntersmsVerifyphonenumberDemo
 	{
-		private const string API_Verifyphonenumber = "https://api.mysubmail.com/service/verifyphonenumber.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_Verifyphonenumber = "https://api-v4.mysubmail.com/service/verifyphonenumber.json";
+		private const string API_Timestamp https://api-v4.mysubmail.comcom/service/timestamp.json";
 		public void Verifyphonenumber()
 		{
 			string appid = "59xxx";

@@ -1,4 +1,4 @@
-## API: balance/voice
+## API: Balance/Voice
 
 <br>
 
@@ -18,9 +18,7 @@
 
 <br>
 
-##### `<主> https://api.mysubmail.com/balance/voice`
-
-##### `<备> https://api.submail.cn/balance/voice`
+##### `https://api-v4.mysubmail.com/balance/voice`
 
 ---
 
@@ -30,10 +28,10 @@
 
 <br>
 
-| 格式   | URL                                                    |
-| ------ | ------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/balance/voice.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/balance/voice.xml`          |
+| 格式   | URL                                                       |
+| ------ | --------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/balance/voice.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/balance/voice.xml`          |
 
 ---
 <br>
@@ -88,7 +86,7 @@
 
 
 ```
-curl -d "appid=your_appid&amp;signature=your_appkey" http://api.mysubmail.com/balance/voice.json
+curl -d "appid=your_appid&amp;signature=your_appkey" http://api-v4.mysubmail.com/balance/voice.json
 ```
 
 <br>
@@ -146,6 +144,5 @@ curl -d "appid=your_appid&amp;signature=your_appkey" http://api.mysubmail.com/ba
 <br>
 
 ##### 参阅 [API 错误代码](https://www.mysubmail.com/documents/smwHw2)
-
 
 ---

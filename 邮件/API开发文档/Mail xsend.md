@@ -1,4 +1,4 @@
-## API: Mail/xsend
+## API: Mail/XSend
 
 <br>
 
@@ -24,9 +24,7 @@
 
 <br>
 
-##### `<主> https://api.mysubmail.com/mail/xsend`
-
-##### `<备> https://api.submail.cn/mail/xsend`
+##### `https://api-v4.mysubmail.com/mail/xsend`
 
 ---
 <br>
@@ -35,10 +33,10 @@
 
 <br>
 
-| 格式   | URL                                                 |
-| ------ | --------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/mail/xsend.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/mail/xsend.xml`          |
+| 格式   | URL                                                    |
+| ------ | ------------------------------------------------------ |
+| `json` | `https://api-v4.mysubmail.com/mail/xsend.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/mail/xsend.xml`          |
 
 ---
 
@@ -127,7 +125,7 @@ PS:大多数的语言都有专属的JSON解析器（ ENCODING 和 DECODEING 方�
 ##### POST URL
 
 ```
-https://api.mysubmail.com/mail/xsend.json
+https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 <br>
@@ -172,7 +170,7 @@ appid=your_app_id
 ##### POST URL
 
 ```
-https://api.mysubmail.com/mail/xsend.json
+https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 <br>
@@ -215,7 +213,7 @@ appid=your_app_id
 ##### POST URL
 
 ```
-https://api.mysubmail.com/mail/xsend.json
+https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 
@@ -259,7 +257,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;project=ThJBE4&amp;signature=your_app_key' https://api.mysubmail.com/mail/xsend.json
+curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 <br>
@@ -289,7 +287,7 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;project=ThJBE4&amp;signature=you
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=leo<leo> ,retro@submail.cn&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api.mysubmail.com/mail/xsend.json
+curl -d 'appid=your_app_id&amp;to=leo<leo> ,retro@submail.cn&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 <br>
@@ -319,7 +317,7 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> ,retro@submail.cn&amp;&amp;project=Th
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;addressbook=subscribe&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api.mysubmail.com/mail/xsend.json
+curl -d 'appid=your_app_id&amp;addressbook=subscribe&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 <br>
@@ -372,7 +370,6 @@ curl -d 'appid=your_app_id&amp;addressbook=subscribe&amp;&amp;project=ThJBE4&amp
       "msg":"error message"
 }
 ```
-
 
 ---
 

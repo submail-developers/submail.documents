@@ -4,13 +4,13 @@
     var crypto = require('crypto');
     var appid = "input your appid";
     var appkey = "input your appkey";
-    var api = "https://api.mysubmail.com/mms/template";
+    var api = "https://api-v4.mysubmail.com/mms/template";
 
 
 ​    
 ​    
-    //生成加密签名
-    
+​    //生成加密签名
+​    
     function BuildSignature(params){
         var sorted = [];
         for(var key in params) {
@@ -34,8 +34,8 @@
 
 
 ​    
-    //模板参数示例
-    
+​    //模板参数示例
+​    
     var template_content = [
         {
             text : "尊敬的@var(name),今天是@var(week)",
@@ -76,7 +76,7 @@
     //加密示例
     
     request({
-        uri: "https://api.mysubmail.com/service/timestamp",
+        uri: "https://api-v4.mysubmail.com/service/timestamp",
         method: 'GET'
     }, function(error, response, body) {
         var result = JSON.parse(body);

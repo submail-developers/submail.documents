@@ -1,4 +1,4 @@
-# DEMEO:InternationalSMS/XSend
+# DEMO:InternationalSMS/XSend
 
 <br>
 
@@ -34,7 +34,7 @@
 
 <br>
 
-## 代码示列
+## 代码示例
 ### IntersmsXsendDemo
 ```java
 package com.submail.demo.intersms;
@@ -53,8 +53,8 @@ import java.io.IOException;
 import java.util.TreeMap;
 
 public class IntersmsXsendDemo {
-    public static final String TIMESTAMP = "https://api.mysubmail.com/service/timestamp";
-    private static final String URL = "https://api.mysubmail.com/internationalsms/xsend.json";
+    public static final String TIMESTAMP = "https://api-v4.mysubmail.com/service/timestamp";
+    private static final String URL = "https://api-v4.mysubmail.com/internationalsms/xsend.json";
     public static final String TYPE_MD5 = "md5";
     public static final String TYPE_SHA1 = "sha1";
 

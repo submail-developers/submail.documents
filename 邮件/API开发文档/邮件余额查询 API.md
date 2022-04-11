@@ -18,9 +18,7 @@
 
 <br>
 
-##### `<主> https://api.mysubmail.com/balance/mail`
-
-##### `<备> https://api.submail.cn/balance/mail`
+##### `https://api-v4.mysubmail.com/balance/mail`
 
 ---
 
@@ -31,10 +29,10 @@
 <br>
 
 
-| 格式 | URL                                                 |
-| ---- | --------------------------------------------------- |
-| json | https://api.mysubmail.com/balance/mail.json（默认） |
-| xml  | https://api.mysubmail.com/balance/mail.xml          |
+| 格式 | URL                                                    |
+| ---- | ------------------------------------------------------ |
+| json | https://api-v4.mysubmail.com/balance/mail.json（默认） |
+| xml  | https://api-v4.mysubmail.com/balance/mail.xml          |
 
 ---
 
@@ -87,7 +85,7 @@
 
 
 ```
-curl -d "appid=your_appid&amp;signature=your_appkey" http://api.mysubmail.com/balance/mail.json
+curl -d "appid=your_appid&amp;signature=your_appkey" http://api-v4.mysubmail.com/balance/mail.json
 ```
 
 <br>                    

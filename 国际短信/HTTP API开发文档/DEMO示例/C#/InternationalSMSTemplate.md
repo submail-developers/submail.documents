@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/Template
+# DEMO:InternationalSMS/Template
 
 <br>
 
@@ -8,7 +8,7 @@
 
 <br>
 
-## 代码示列
+## 代码示例
 
 ```csharp
 using System;
@@ -24,8 +24,8 @@ namespace SUBMAILDEMO
 {
 	public class IntersmsTemplateDemo
 	{
-		private const string API_IntersmsTemplate = "https://api.mysubmail.com/internationalsms/template.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_IntersmsTemplate = "https://api-v4.mysubmail.com/internationalsms/template.json";
+		private const string API_Timestamp https://api-v4.mysubmail.comcom/service/timestamp.json";
 
 		public void template()
 		{

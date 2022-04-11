@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/Send
+# DEMO:InternationalSMS/Send
 
 - 支持JDK版本：1.5以上 
 - 依赖的jar包：httpclient-4.5.3.jar、httpcore-4.4.14.jar、commons-logging1.1.1.jar、fastjson-1.2.75.jar
@@ -26,7 +26,7 @@
 </dependency>
 ```
 
-## 代码示列
+## 代码示例
 ### IntersmsSendDemo
 ```java
 package com.submail.demo.intersms;
@@ -45,8 +45,8 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 
 public class IntersmsSendDemo {
-    public static final String TIMESTAMP = "https://api.mysubmail.com/service/timestamp";
-    private static final String URL = "https://api.mysubmail.com/internationalsms/send.json";
+    public static final String TIMESTAMP = "https://api-v4.mysubmail.com/service/timestamp";
+    private static final String URL https://api-v4.mysubmail.comcom/internationalsms/send.json";
     public static final String TYPE_MD5 = "md5";
     public static final String TYPE_SHA1 = "sha1";
 
