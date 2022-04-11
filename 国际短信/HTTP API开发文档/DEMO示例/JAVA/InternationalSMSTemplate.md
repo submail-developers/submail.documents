@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/Template
+# DEMO:InternationalSMS/Template
 
 <br>
 
@@ -29,7 +29,7 @@
 </dependency>
 ```
 
-## 代码示列
+## 代码示例
 ### IntersmsTemplateDemo
 ```java
 package com.submail.demo.intersms;
@@ -49,8 +49,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class IntersmsTemplate {
-    public static final String TIMESTAMP = "https://api.mysubmail.com/service/timestamp";
-    private static final String URL = "https://api.mysubmail.com/internationalsms/template.json";
+    public static final String TIMESTAMP = "https://api-v4.mysubmail.com/service/timestamp";
+    private static final String URL = "https://api-v4.mysubmail.com/internationalsms/template.json";
     public static final String TYPE_MD5 = "md5";
     public static final String TYPE_SHA1 = "sha1";
 

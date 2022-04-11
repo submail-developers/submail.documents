@@ -1,4 +1,4 @@
-##  API: internationalsms/template
+##  API: InternationalSMS/Template
 
 <br>
 
@@ -16,17 +16,13 @@
 
 ------
 
-
 <br>
 
 ### **URL**
 
 <br>
 
-##### `<主> https://api.mysubmail.com/internationalsms/template`
-
-##### `<备> https://api.submail.cn/internationalsms/template`
-
+##### `https://api-v4.mysubmail.com/internationalsms/template`
 
 ------
 
@@ -38,9 +34,8 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/internationalsms/template.json `**（默认）** |
-| `xml`  | `https://api.mysubmail.com/internationalsms/template.xml`    |
-
+| `json` | `https://api-v4.mysubmail.com/internationalsms/template.json `**（默认）** |
+| `xml`  | `https://api-v4.mysubmail.com/internationalsms/template.xml` |
 
 ------
 
@@ -150,7 +145,7 @@
 
 
 ```
-curl -s "https://api.mysubmail.com/internationalsms/template.json?appid=your_appid&amp;signature=your_appkey"
+curl -s "https://api-v4.mysubmail.com/internationalsms/template.json?appid=your_appid&amp;signature=your_appkey"
 ```
 
 <br>
@@ -172,7 +167,6 @@ curl -s "https://api.mysubmail.com/internationalsms/template.json?appid=your_app
     }
 }
 ```
-
 
 ---
 
@@ -203,7 +197,6 @@ curl -d "appid=your_appid&amp;signature=your_appkey&amp;sms_title=POST方法测�
 }
 ```
 
-
 ---
 
 <br>
@@ -231,7 +224,6 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;template_id=FsoAF3&a
     "status":"success"
 }
 ```
-
 
 ---
 
@@ -262,7 +254,6 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;template_id=FsoAF3" 
 }
 ```
 
-
 ---
 
 <br>
@@ -277,7 +268,6 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;template_id=FsoAF3" 
 | template_status : 1 | 正在审核   |
 | template_status : 2 | 审核通过   |
 | template_status : 3 | 未通过审核 |
-
 
 ---
 

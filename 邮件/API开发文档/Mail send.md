@@ -1,4 +1,4 @@
-## API: Mail/send
+## API: Mail/Send
 
 <br>
 
@@ -18,9 +18,7 @@
 
 <br>
 
-##### `<主> https://api.mysubmail.com/mail/send`
-
-##### `<备> https://api.submail.cn/mail/send`
+##### `https://api-v4.mysubmail.com/mail/send`
 
 ---
 
@@ -30,10 +28,10 @@
 
 <br>
 
-| 格式   | URL                                                |
-| ------ | -------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/mail/send.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/mail/send.xml`          |
+| 格式   | URL                                                   |
+| ------ | ----------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/mail/send.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/mail/send.xml`          |
 
 ---
 

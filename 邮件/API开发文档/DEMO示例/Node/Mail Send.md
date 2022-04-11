@@ -8,7 +8,7 @@
     
     var appid = "input your appid";
     var appkey = "input your appkey";
-    var api = "https://api.mysubmail.com/mail/send";
+    var api = "https://api-v4.mysubmail.com/mail/send";
     var attach1 = fs.createReadStream("/Users/duan/Desktop/12455.png");
     var attach2 = fs.createReadStream("/Users/duan/Desktop/12345.png");
     
@@ -61,7 +61,7 @@
     //加密示例
     
     request({
-        uri: "https://api.mysubmail.com/service/timestamp",
+        uri: "https://api-v4.mysubmail.com/service/timestamp",
         method: 'GET'
     }, function(error, response, body) {
         var result = JSON.parse(body);

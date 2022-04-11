@@ -1,4 +1,4 @@
-# DEMO:MMS/Balance
+# DEMO: MMS/Balance
 
 <br>
 
@@ -9,7 +9,7 @@
 <br>
 
 
-## 代码示列
+## 代码示例
 
 ```csharp
 using System;
@@ -25,8 +25,8 @@ namespace SUBMAILDEMO
 {
 	public class MMSBalanceDemo
 	{
-		private const string API_MMSBalance = "https://api.mysubmail.com/balance/mms.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_MMSBalance = "https://api-v4.mysubmail.com/balance/mms.json";
+		private const string API_Timestamp = "httpsapi-v4.mysubmail.comcom/service/timestamp.json";
 		public void Balance()
 		{
 			string appid = "";

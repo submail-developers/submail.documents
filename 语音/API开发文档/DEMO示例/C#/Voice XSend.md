@@ -8,7 +8,7 @@
 
 <br>
 
-## 代码示列
+## 代码示例
 
 ```
 using System;
@@ -23,8 +23,8 @@ namespace SUBMAIL
 {
 	public class VoiceXsendDemo
 	{
-		private const string API_VoiceXsend = "https://api.mysubmail.com/voice/xsend.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_VoiceXsend = "https://api-v4.mysubmail.com/voice/xsend.json";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 
 		public void Demo()
 		{

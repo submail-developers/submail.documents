@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/MultiXSend
+# DEMO:InternationalSMS/MultiXSend
 
 <br>
 
@@ -9,7 +9,7 @@
 <br>
 
 
-## 代码示列
+## 代码示例
 ```csharp
 using System;
 using System.Text;
@@ -24,8 +24,8 @@ namespace SUBMAILDEMO
 {
 	public class IntersmsMultiXSendDemo
 	{
-		private const string API_MessageMultiXSend = "https://api.mysubmail.com/internationalsms/multixsend.json ";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_MessageMultiXSend = "https://api-v4.mysubmail.com/internationalsms/multixsend.json ";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void MultiXSend()
 		{
 			string appid = "59xxx";

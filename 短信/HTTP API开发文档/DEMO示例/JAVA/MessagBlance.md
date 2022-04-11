@@ -1,4 +1,4 @@
-# DEMO:Messag/Blance
+# DEMO: SMS/Blance
 
 - 支持JDK版本：1.5以上 
 - 依赖的jar包：httpclient-4.5.3.jar、httpcore-4.4.14.jar、commons-logging1.1.1.jar、fastjson-1.2.75.jar
@@ -29,10 +29,10 @@
 
 
 
-## 代码示列
-### MessageBalanceDemo
+## 代码示例
+### SMSBalanceDemo
 ```java
-package com.submail.demo.message;
+package com.submail.demo.sms;
 
 import java.io.IOException;
 import java.util.TreeMap;
@@ -49,9 +49,9 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 
-public class MessageBalance {
-    public static final String TIMESTAMP = "https://api.mysubmail.com/service/timestamp";
-    private static final String URL = "https://api.mysubmail.com/balance/sms.json";
+public class smsBalance {
+    public static final String TIMESTAMP = "https://api-v4.mysubmail.com/service/timestamp";
+    private static final String URL = "https://api-v4.mysubmail.com/balance/sms.json";
     public static final String TYPE_MD5 = "md5";
     public static final String TYPE_SHA1 = "sha1";
 
@@ -125,7 +125,7 @@ package com.submail.demo;
  * @date 2021/8/4 - 5:52 下午
  */
 
-import java.security.MessageDigest;
+import java.security.smsDigest;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
@@ -139,9 +139,9 @@ public class RequestEncoder {
             return null;
         }
         try {
-            MessageDigest messageDigest = MessageDigest.getInstance(algorithm);
-            messageDigest.update(str.getBytes("UTF-8"));
-            return getFormattedText(messageDigest.digest());
+            smsDigest smsDigest = smsDigest.getInstance(algorithm);
+            smsDigest.update(str.getBytes("UTF-8"));
+            return getFormattedText(smsDigest.digest());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

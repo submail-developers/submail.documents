@@ -1,4 +1,4 @@
-##  API: Internationalsms/xsend 
+##  API: InternationalSMS/XSend 
 <br>
 
 ### **概览**
@@ -6,7 +6,6 @@
 <br>
 
 `internationalsms/xsend` 是 SUBMAIL 的国际短信单发API。
-
 
 ---
 
@@ -16,9 +15,7 @@
 
 <br>
 
-`<主> https://api.mysubmail.com/internationalsms/xsend`
-
-`<备> https://api.submail.cn/internationalsms/xsend`
+`https://api-v4.mysubmail.com/internationalsms/xsend`
 
 ---
 <br>
@@ -29,8 +26,8 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/internationalsms/xsend.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/internationalsms/xsend.xml`       |
+| `json` | `https://api-v4.mysubmail.com/internationalsms/xsend.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/internationalsms/xsend.xml`    |
 
 ---
 <br>
@@ -89,7 +86,7 @@
 ##### POST URL
 
 ```
-https://api.mysubmail.com/internationalsms/xsend.json
+https://api-v4.mysubmail.com/internationalsms/xsend.json
 ```
 
 <br>
@@ -126,7 +123,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=+17788xxxxxxxx&amp;project=ThJBE4&amp;signature=your_app_key' https://api.mysubmail.com/internationalsms/xsend.json
+curl -d 'appid=your_app_id&amp;to=+17788xxxxxxxx&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/internationalsms/xsend.json
 ```
 <br>
 

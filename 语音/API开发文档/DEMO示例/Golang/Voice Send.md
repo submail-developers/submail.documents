@@ -1,10 +1,11 @@
 # DEMO:Voice/Send
 
+### 示例代码
 
-###示例代码
 <br>
 
-####依赖
+#### 依赖
+
 ```
 import (
 	"bytes"
@@ -23,18 +24,18 @@ import (
 )
 ```
 
+#### 配置信息
 
-####配置信息
 ```
 const (
-	API    = "https://api.mysubmail.com/voice/send"
+	API    = "https://api-v4.mysubmail.com/voice/send"
 	APPID  = "10***"
 	APPKEY = "f8a5**********************778df"
 )
 ```
 
+#### 非加密代码示例
 
-####非加密代码示例
 ```
     postdata := make(map[string]string)
 	postdata["appid"] = APPID
@@ -57,7 +58,8 @@ const (
 
 
 
-####加密代码示例
+#### 加密代码示例
+
 ```
     //所需参数
 	postdata := make(map[string]string)
@@ -67,7 +69,7 @@ const (
 	postdata["sign_type"] = "md5"
 	postdata["sign_version"] = "2"
 	//获取服务器时间戳，该时间戳为 UNIX 时间戳，也可以自己生成
-	q, _ := http.Get("https://api.mysubmail.com/service/timestamp")
+	q, _ := http.Get("https://api-v4.mysubmail.com/service/timestamp")
 	r, _ := ioutil.ReadAll(q.Body)
 	m := make(map[string]float64)
 	json.Unmarshal(r, &amp;m)

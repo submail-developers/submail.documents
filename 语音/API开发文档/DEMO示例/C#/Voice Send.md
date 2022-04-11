@@ -8,7 +8,7 @@
 
 <br>
 
-## 代码示列
+## 代码示例
 
 ```csharp
 using System;
@@ -23,8 +23,8 @@ namespace SUBMAILDEMO2021
 {
 	public class VoiceSendDemo
 	{
-		private const string API_VoiceSend = "https://api.mysubmail.com/voice/send.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_VoiceSend = "https://api-v4.mysubmail.com/voice/send.json";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void Send()
 		{
 			string appid = "";

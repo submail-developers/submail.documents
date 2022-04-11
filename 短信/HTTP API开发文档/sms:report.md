@@ -1,4 +1,4 @@
-## API: sms/reports
+## API: SMS/Reports
 
 <br>
 
@@ -295,7 +295,6 @@ curl -d "appid=your_app_id&star_date=1640100000&end_date=1640200000&signature=yo
     ]
 }
 ```
-
 
 ---
 

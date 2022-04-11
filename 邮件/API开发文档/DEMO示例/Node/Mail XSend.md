@@ -5,13 +5,13 @@
     
     var appid = "input your appid";
     var appkey = "input your appkey";
-    var api = "https://api.mysubmail.com/mail/xsend";
+    var api = "https://api-v4.mysubmail.com/mail/xsend";
 
 
 ​    
 ​    
-    //生成加密签名
-    
+​    //生成加密签名
+​    
     function BuildSignature(params){
         var sorted = [];
         for(var key in params) {
@@ -62,7 +62,7 @@
     //加密示例
     
     request({
-        uri: "https://api.mysubmail.com/service/timestamp",
+        uri: "https://api-v4.mysubmail.com/service/timestamp",
         method: 'GET'
     }, function(error, response, body) {
         var result = JSON.parse(body);
@@ -86,13 +86,13 @@
 
 
 ​        
-        request.post({
-            url: api, 
-            formData: requestParams
-        }, function optionalCallback(err, httpResponse, body) {
-            if (err) {
-                return console.error(err);
-            }
-            console.log(body);
-        });
-    });
+​        request.post({
+​            url: api, 
+​            formData: requestParams
+​        }, function optionalCallback(err, httpResponse, body) {
+​            if (err) {
+​                return console.error(err);
+​            }
+​            console.log(body);
+​        });
+​    });

@@ -1,4 +1,4 @@
-## API: MMS/template
+## API: MMS/Template
 
  <br>
 
@@ -22,9 +22,7 @@
 
 <br>
 
-`<主> https://api.mysubmail.com/mms/template`
-
-`<备> https://api.submail.cn/mms/template`
+`<主> https://api-v4.mysubmail.com/mms/template`
 
 ------
 
@@ -34,10 +32,10 @@
 
 <br>
 
-| 格式   | URL                                                      |
-| ------ | -------------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/mms/template.json `**(默认)** |
-| `xml`  | `https://api.mysubmail.com/mms/template.xml`             |
+| 格式   | URL                                                         |
+| ------ | ----------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/mms/template.json `**(默认)** |
+| `xml`  | `https://api-v4.mysubmail.com/mms/template.xml`             |
 
 ---
 
@@ -259,7 +257,7 @@
 ##### 发送 CURL
 
 ```
-curl -s "https://api.mysubmail.com/mms/template.json?appid=your_appid&amp;signature=your_appkey&amp;template_id=FIJe14"
+curl -s "https://api-v4.mysubmail.com/mms/template.json?appid=your_appid&amp;signature=your_appkey&amp;template_id=FIJe14"
 ```
 
 <br>
@@ -325,7 +323,7 @@ curl -d 'appid=your_appid&amp;signature=your_appkey&amp;mms_title=POST方法测�
        "text":"text3"
     }
 ]
- ' http://api.mysubmail.com/mms/template.json
+ ' http://api-v4.mysubmail.com/mms/template.json
 ```
 
 <br>
@@ -374,7 +372,7 @@ curl --data 'appid=your_appid&amp;signature=your_appkey&amp;mms_title=POST方法
        "text":"text3"
     }
 ]'
-   http://api.mysubmail.com/mms/template.json
+   http://api-v4.mysubmail.com/mms/template.json
 ```
 
 <br>
@@ -399,7 +397,7 @@ curl --data 'appid=your_appid&amp;signature=your_appkey&amp;mms_title=POST方法
 ##### 发送 CURL
 
 ```
-curl --data "appid=your_appid&amp;signature=your_appkey&amp;template_id=FsoAF3" -X delete http://api.mysubmail.com/mms/template.json
+curl --data "appid=your_appid&amp;signature=your_appkey&amp;template_id=FsoAF3" -X delete http://api-v4.mysubmail.com/mms/template.json
 ```
 
 <br>
@@ -460,7 +458,6 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;template_id=FsoAF3" 
     "msg":"error message"
 }
 ```
-
 
 ------
 

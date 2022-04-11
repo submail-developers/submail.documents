@@ -22,8 +22,8 @@ namespace SUBMAILDEMO2021
 {
 	public class MailBalanceDemo
 	{
-		private const string API_MailBalance = "https://api.mysubmail.com/balance/mail.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_MailBalance = "https://api-v4.mysubmail.com/balance/mail.json";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void Balance()
 		{
 			string appid = "16xxx";

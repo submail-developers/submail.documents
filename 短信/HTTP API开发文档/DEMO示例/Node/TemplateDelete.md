@@ -1,4 +1,4 @@
-# DEMO:Template/Delete
+# DEMO: Template/Delete
 
 
 
@@ -8,7 +8,7 @@ var request = require('request');
 var crypto = require('crypto');
 var appid = "input your appid";
 var appkey = "input your appkey";
-var api = "https://api.mysubmail.com/message/template";
+var api = "https://api-v4.mysubmail.com/sms/template";
 ```
 
 ```
@@ -59,7 +59,7 @@ request({
 //加密示例
 
 request({
-    uri: "https://api.mysubmail.com/service/timestamp",
+    uri: "https://api-v4.mysubmail.com/service/timestamp",
     method: 'GET'
 }, function(error, response, body) {
     var result = JSON.parse(body);

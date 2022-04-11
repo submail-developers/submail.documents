@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/XSend
+# DEMO:InternationalSMS/XSend
 
 <br>
 
@@ -8,7 +8,7 @@
 
 <br>
 
-## 代码示列
+## 代码示例
 
 ```csharp
 using System;
@@ -24,8 +24,8 @@ namespace SUBMAILDEMO
 {
 	public class IntersmsXSendDemo
 	{
-		private const string API_IntersmsXSend = "https://api.mysubmail.com/internationalsms/xsend.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_IntersmsXSend = "https://api-v4.mysubmail.com/internationalsms/xsend.json";
+		private const string API_Timestamp https://api-v4.mysubmail.comcom/service/timestamp.json";
 		public void XSend()
 		{
 			string appid = "59603";

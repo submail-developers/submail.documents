@@ -1,8 +1,8 @@
-#DEMEO:InternationalSMS/Verifyphonenumber
+# DEMEO:InternationalSMS/Verifyphonenumber
 
 <br>
 
-## 代码示列
+## 代码示例
 
 ```
 <?php
@@ -16,7 +16,7 @@
 
     $ch = curl_init();
     curl_setopt_array($ch, array(
-        CURLOPT_URL            => 'https://api.mysubmail.com/service/verifyphonenumber.json',
+        CURLOPT_URL            => 'https://api-v4.mysubmail.com/service/verifyphonenumber.json',
         CURLOPT_RETURNTRANSFER => 1,
         CURLOPT_POST           => 1,
         CURLOPT_POSTFIELDS     => $post_data

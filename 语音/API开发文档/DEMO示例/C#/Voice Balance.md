@@ -23,8 +23,8 @@ namespace SUBMAILDEMO2021
 {
 	public class VoiceBalanceDemo
 	{
-		private const string API_VoiceBalance = "https://api.mysubmail.com/balance/voice.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_VoiceBalance = "https://api-v4.mysubmail.com/balance/voice.json";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void Balance()
 		{
 			string appid = "";

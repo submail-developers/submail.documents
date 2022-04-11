@@ -1,4 +1,4 @@
-## API: Voice/multixsend
+## API: Voice/MultiXSend
 
 <br>
 
@@ -77,10 +77,7 @@ signature=your_app_key
 
 <br>
 
-##### `<主> https://api.mysubmail.com/voice/multixsend`
-
-##### `<备> https://api.submail.cn/voice/multixsend`
-
+##### `https://api-v4.mysubmail.com/voice/multixsend`
 
 ---
 
@@ -157,7 +154,7 @@ PS:大多数的语言都有专属的JSON解析器（ ENCODING 和 DECODEING 方�
 ##### POST URL
 
 ```
-https://api.mysubmail.com/voice/multixsend.json
+https://api-v4.mysubmail.com/voice/multixsend.json
 ```
 
 

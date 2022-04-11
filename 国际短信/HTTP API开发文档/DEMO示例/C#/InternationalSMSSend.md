@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/Send
+# DEMO:InternationalSMS/Send
 
 <br>
 
@@ -8,7 +8,7 @@
 
 <br>
 
-## 代码示列
+## 代码示例
 ```csharp
 using System;
 using System.Text;
@@ -22,8 +22,8 @@ namespace SUBMAILDEMO
 {
 	public class IntersmsSendDemo
 	{
-		private const string API_IntersmsSend = "https://api.mysubmail.com/internationalsms/send.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_IntersmsSend = "https://api-v4.mysubmail.com/internationalsms/send.json";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void Send()
 		{
 			string appid = "59xxx";

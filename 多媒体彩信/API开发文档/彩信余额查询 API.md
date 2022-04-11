@@ -1,4 +1,4 @@
-##  API: balance/mms
+##  API: Balance/MMS
 
 <br>
 
@@ -20,9 +20,7 @@
 
 <br>
 
-##### `<主> https://api.mysubmail.com/balance/mms`
-
-##### `<备> https://api.submail.cn/balance/mms`
+##### `<主> https://api-v4.mysubmail.com/balance/mms`
 
 ------
 
@@ -34,10 +32,10 @@
 
 
 
-| 格式   | URL                                                    |
-| ------ | ------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/balance/mms.json`**(默认)** |
-| `xml`  | `https://api.mysubmail.com/balance/mms.xml`            |
+| 格式   | URL                                                       |
+| ------ | --------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/balance/mms.json`**(默认)** |
+| `xml`  | `https://api-v4.mysubmail.com/balance/mms.xml`            |
 
 ---
 
@@ -94,7 +92,7 @@
 
 
 ```
-curl -d "appid=your_appid&amp;signature=your_appkey" http://api.mysubmail.com/balance/mms.json
+curl -d "appid=your_appid&amp;signature=your_appkey" http://api-v4.mysubmail.com/balance/mms.json
 ```
 
 <br>
@@ -143,7 +141,6 @@ curl -d "appid=your_appid&amp;signature=your_appkey" http://api.mysubmail.com/ba
 "msg":"error message"
 }
 ```
-
 
 ------
 

@@ -1,9 +1,11 @@
-# DEMEO:InternationalSMS/Verifyphonenumber
+# DEMO:InternationalSMS/Verifyphonenumber
 
-###示例代码
+### 示例代码
+
 <br>
 
-####依赖
+#### 依赖
+
 ```
 import (
 	"bytes"
@@ -14,16 +16,16 @@ import (
 )
 ```
 
+#### 配置信息
 
-####配置信息
 ```
 const (
-	API    = "https://api.mysubmail.com/service/verifyphonenumber"
+	API    = "https://api-v4.mysubmail.com/service/verifyphonenumber"
 )
 ```
 
+#### 代码示例
 
-####代码示例
 ```
    /postdata := make(map[string]string)
 	postdata["to"] = "+998974050307"

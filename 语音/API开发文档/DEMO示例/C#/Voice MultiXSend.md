@@ -26,8 +26,8 @@ namespace SUBMAILDEMO
 {
 	public class VoiceMultiXSendDemo
 	{
-		private const string API_VoiceMultiXSend = "https://api.mysubmail.com/voice/multixsend.json ";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_VoiceMultiXSend = "https://api-v4.mysubmail.com/voice/multixsend.json ";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void MultiXSend()
 		{
 			string appid = "";

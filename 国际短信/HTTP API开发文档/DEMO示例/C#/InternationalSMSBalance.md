@@ -1,4 +1,4 @@
-#DEMEO:InternationalSMS/Balance
+# DEMO:InternationalSMS/Balance
 
 <br>
 
@@ -9,7 +9,7 @@
 <br>
 
 
-## 代码示列
+## 代码示例
 
 ```csharp
 using System;
@@ -24,8 +24,8 @@ namespace SUBMAILDEMO
 {
 	public class IntersmsBalanceDemo
 	{
-		private const string API_IntersmsBalance = "https://api.mysubmail.com/balance/internationalsms.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_IntersmsBalance = "https://api-v4.mysubmail.com/balance/internationalsms.json";
+		private const string API_Timestamp https://api-v4.mysubmail.comcom/service/timestamp.json";
 		public void Balance()
 		{
 			string appid = "59xxx";

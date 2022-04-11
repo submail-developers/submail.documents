@@ -5,7 +5,7 @@
 ### **概览**
 
 <br>
-本文档中列出的所有 API 基础调用 URL 是 `https://api.mysubmail.com` （ 如 API：`message/xsend` 实际请求 URL `https://api.mysubmail.com/message/xsend` ） 。
+本文档中列出的所有 API 基础调用 URL 是 `https://api-v4.mysubmail.com` （ 如 API：`sms/xsend` 实际请求 URL `https://api-v4.mysubmail.com/sms/xsend` ） 。
 SUBMAIL 支持 `json` (默认) 和 `xml` 格式，如果你想要 API 返回码的格式为 `xml`，请在 完整 URL 的末尾加上 `.xml`。
 
 ---
@@ -35,14 +35,14 @@ SUBMAIL API 基于 RESTful API 风格，它具备完整的 HTTP 请求规范，�
 
 <br>
 
-*   [message/send](https://www.mysubmail.com/documents/FppOR3)( 基础短信发送 API)
-*   [message/xsend](https://www.mysubmail.com/documents/OOVyh) ( 增强的短信发送 API)
-*   [message/multisend](https://www.mysubmail.com/documents/KZjET3) (免创建模板短信群发发送 API)
-*   [message/multixsend](https://www.mysubmail.com/documents/eM4rY2) ( 短信群发发送 API)
-*   [message/template](https://www.mysubmail.com/documents/yp2in)(短信模板操作API)
-*   [message/balance](https://www.mysubmail.com/documents/AIcGd4)(短信余额查询API)
-*   [addressbook/message/subscribe](https://www.mysubmail.com/documents/2j0ej2)（ 短信订阅 API ）
-*   [addressbook/message/unsubscribe](https://www.mysubmail.com/documents/NLkEs1)（ 短信退订 API ）
+*   [sms/send](https://www.mysubmail.com/documents/FppOR3)( 基础短信发送 API)
+*   [sms/xsend](https://www.mysubmail.com/documents/OOVyh) ( 增强的短信发送 API)
+*   [sms/multisend](https://www.mysubmail.com/documents/KZjET3) (免创建模板短信群发发送 API)
+*   [sms/multixsend](https://www.mysubmail.com/documents/eM4rY2) ( 短信群发发送 API)
+*   [sms/template](https://www.mysubmail.com/documents/yp2in)(短信模板操作API)
+*   [sms/balance](https://www.mysubmail.com/documents/AIcGd4)(短信余额查询API)
+*   [addressbook/sms/subscribe](https://www.mysubmail.com/documents/2j0ej2)（ 短信订阅 API ）
+*   [addressbook/sms/unsubscribe](https://www.mysubmail.com/documents/NLkEs1)（ 短信退订 API ）
 *   [service/timestamp](https://www.mysubmail.com/documents/oTzAq1) ( 服务器 UNIX 时间戳 )
 *   [service/status](https://www.mysubmail.com/documents/8AV6z1) （服务器状态）
 

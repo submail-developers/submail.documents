@@ -9,7 +9,7 @@
 <br>
 
 
-## 代码示列
+## 代码示例
 ```csharp
 using System;
 using System.Text;
@@ -24,8 +24,8 @@ namespace SUBMAILDEMO
 {
 	public class MMSMultiXSendDemo
 	{
-		private const string API_MMSMultiXSend = "https://api.mysubmail.com/mms/multixsend.json ";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_MMSMultiXSend = "https://api-v4.mysubmail.com/mms/multixsend.json ";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void MultiXSend()
 		{
 			string appid = "";

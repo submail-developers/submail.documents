@@ -1,4 +1,4 @@
-##  API: Internationalsms/send
+##  API: InternationalSMS/Send
 <br>
 
 ### **概览**
@@ -12,9 +12,7 @@
 <br>
 ### **URL**
 <br>
-#####  `<主> https://api.mysubmail.com/internationalsms/send`
-
-#####  `<备> https://api.submail.cn/internationalsms/send`
+#####  `https://api-v4.mysubmail.com/internationalsms/send`
 
 ---
 <br>
@@ -24,8 +22,8 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/internationalsms/send.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/internationalsms/send.xml`        |
+| `json` | `https://api-v4.mysubmail.com/internationalsms/send.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/internationalsms/send.xml`     |
 
 ---
 
@@ -87,7 +85,7 @@ content 可以传自定义内容，非必须短信签名，纯英文短信（包
 ##### POST URL
 
 ```
-https://api.mysubmail.com/internationalsms/send.json
+https://api-v4.mysubmail.com/internationalsms/send.json
 ```
 
 <br>
@@ -125,7 +123,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=+17788xxxxxxxx&amp;content=【SUBMAIL】您的短信验证码：4438，请在10分钟内输入。&amp;signature=your_app_key' https://api.mysubmail.com/internationalsms/send.json
+curl -d 'appid=your_app_id&amp;to=+17788xxxxxxxx&amp;content=【SUBMAIL】您的短信验证码：4438，请在10分钟内输入。&amp;signature=your_app_key' https://api-v4.mysubmail.com/internationalsms/send.json
 ```
 <br>
 ##### 返回

@@ -23,8 +23,8 @@ namespace SUBMAILDEMO
 {
 	public class MailSendDemo
 	{
-		private const string API_MailSend = "https://api.mysubmail.com/mail/send.json";
-		private const string API_Timestamp = "https://api.mysubmail.com/service/timestamp.json";
+		private const string API_MailSend = "https://api-v4.mysubmail.com/mail/send.json";
+		private const string API_Timestamp = "https://api-v4.mysubmail.com/service/timestamp.json";
 		public void Send()
 		{
 			string appid = "16xxx";

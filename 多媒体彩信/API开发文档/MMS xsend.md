@@ -1,4 +1,4 @@
-##  API:MMS/xsend
+##  API:MMS/XSend
 <br>
 
 ### **概览**
@@ -17,9 +17,8 @@
 
  <br>
 
-##### `<主> https://api.mysubmail.com/mms/xsend`
+##### `https://api-v4.mysubmail.com/mms/xsend`
 
-##### `<备> https://api.submail.cn/mms/xsend`
 ---
 <br>
 
@@ -27,10 +26,10 @@
 
 <br>
 
-| 格式   | URL                                                |
-| ------ | -------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/mms/xsend.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/mms/xsend.xml`          |
+| 格式   | URL                                                   |
+| ------ | ----------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/mms/xsend.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/mms/xsend.xml`          |
 
 ---
 
@@ -89,7 +88,7 @@
 ##### POST URL
 
 ```
-https://api.mysubmail.com/mms/xsend.json
+https://api-v4.mysubmail.com/mms/xsend.json
 ```
 
 <br>
@@ -126,7 +125,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api.mysubmail.com/message/xsend.xml
+curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/message/xsend.xml
 ```
 
 <br>
@@ -139,7 +138,6 @@ curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;&amp;project=ThJBE4&amp;signat
       "money_account":14197
 }
 ```
-
 
 ---
 
@@ -174,7 +172,6 @@ curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;&amp;project=ThJBE4&amp;signat
       "msg":"error message"
 }
 ```
-
 
 ---
 

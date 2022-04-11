@@ -1,4 +1,4 @@
-## API:sms/log
+## API: SMS/Log
 
 <br>
 
@@ -156,7 +156,6 @@ curl -d "appid=your_appid&signature=your_appkey" https://api-v4.mysubmail.com/sm
 }
 ```
 
-
 ---
 
 <br>
@@ -171,7 +170,6 @@ curl -d "appid=your_appid&signature=your_appkey" https://api-v4.mysubmail.com/sm
 "msg":"error message"
 }
 ```
-
 
 ---
 

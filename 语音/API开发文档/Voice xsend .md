@@ -1,4 +1,4 @@
-##  API: Voice/xsend
+##  API: Voice/XSend
 <br>
 
 ### **概览**
@@ -15,9 +15,7 @@
 
 <br>
 
-##### `<主>  https://api.mysubmail.com/voice/xsend`
-
-##### `<备> https://api.submail.cn/voice/xsend`
+##### `https://api-v4.mysubmail.com/voice/xsend`
 
 ---
 <br>
@@ -26,10 +24,10 @@
 
 <br>
 
-| 格式   | URL                                                  |
-| ------ | ---------------------------------------------------- |
-| `json` | `https://api.mysubmail.com/voice/xsend.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/voice/xsend.xml`          |
+| 格式   | URL                                                     |
+| ------ | ------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/voice/xsend.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/voice/xsend.xml`          |
 
 ---
 
@@ -88,7 +86,7 @@
 ##### POST URL
 
 ```
-https://api.mysubmail.com/voice/xsend.json
+https://api-v4.mysubmail.com/voice/xsend.json
 ```
 
 <br>
@@ -126,7 +124,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-url -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;project=ThJBE4&amp;signature=your_app_key' https://api.mysubmail.com/voice/xsend.json
+url -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/voice/xsend.json
 ```
 
 <br>

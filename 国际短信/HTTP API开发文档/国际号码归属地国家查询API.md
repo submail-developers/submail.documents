@@ -1,4 +1,4 @@
-## API: service/verifyphonenumber
+## API: Service/Verifyphonenumber
 
 <br>
 
@@ -18,9 +18,7 @@
 
 <br>
 
-##### `<主>  https://api.mysubmail.com/service/verifyphonenumber`
-
-##### `<备> https://api.submail.cn/service/verifyphonenumber`
+##### `https://api-v4.mysubmail.com/service/verifyphonenumber`
 
 ---
 
@@ -32,8 +30,8 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/service/verifyphonenumber.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/service/verifyphonenumber.xml`    |
+| `json` | `https://api-v4.mysubmail.com/service/verifyphonenumber.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/service/verifyphonenumber.xml` |
 
 ---
 <br>
@@ -85,7 +83,7 @@
 ##### POST
 
 ```
-https://api.mysubmail.com/service/verifyphonenumber.json
+https://api-v4.mysubmail.com/service/verifyphonenumber.json
 ```
 
 <br>

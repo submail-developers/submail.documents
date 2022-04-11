@@ -1,11 +1,11 @@
-#DEMEO:InternationalSMS/Balance
+# DEMEO:InternationalSMS/Balance
 
 	var request = require('request');
 	var crypto = require('crypto');
 	
 	var appid = "input your appid";
 	var appkey = "input your appkey";
-	var api = "https://api.mysubmail.com/balance/internationalsms";
+	var api = "https://api-v4.mysubmail.com/balance/internationalsms";
 	
 	//生成加密签名
 	function BuildSignature(params){
@@ -46,7 +46,7 @@
 	//加密示例
 	
 	request({
-	    uri: "https://api.mysubmail.com/service/timestamp",
+	    urihttps://api-v4.mysubmail.comcom/service/timestamp",
 	    method: 'GET'
 	}, function(error, response, body) {
 	    var result = JSON.parse(body);

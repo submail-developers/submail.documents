@@ -1,4 +1,4 @@
-## API: sms/batchsend
+## API: SMS/BatchSend
 
 <br>
 

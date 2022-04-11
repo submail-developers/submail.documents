@@ -1,4 +1,4 @@
- ## API: internationalsms/multixsend
+ ## API: InternationalSMS/MultiXSend
 
 <br>
 
@@ -78,9 +78,7 @@ appid=your_app_id
 
 <br>
 
-##### `<主>https://api.mysubmail.com/internationalsms/multixsend`
-
-##### `<备>https://api.submail.cn/internationalsms/multixsend`
+##### `https://api-v4.mysubmail.com/internationalsms/multixsend`
 
 ---
 
@@ -92,8 +90,8 @@ appid=your_app_id
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api.mysubmail.com/internationalsms/multixsend.json` **(默认)** |
-| `xml`  | `https://api.mysubmail.com/internationalsms/multixsend.xml`  |
+| `json` | `https://api-v4.mysubmail.com/internationalsms/multixsend.json` **(默认)** |
+| `xml`  | `https://api-v4.mysubmail.com/internationalsms/multixsend.xml` |
 
 ---
 
@@ -151,7 +149,7 @@ appid=your_app_id
 ##### POST URL
 
 ```
-https://api.mysubmail.com/internationalsms/multixsend.json
+https://api-v4.mysubmail.com/internationalsms/multixsend.json
 ```
 
 <br>
@@ -178,7 +176,6 @@ appid=your_app_id
 ```
 
 <br>
-
 
 ---
 

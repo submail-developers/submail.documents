@@ -1,9 +1,11 @@
-#DEMO:MMS/XSend
+# DEMO:MMS/XSend
 
-###示例代码
+#### 示例代码
+
 <br>
 
-####依赖
+#### 依赖
+
 ```
 import (
 	"bytes"
@@ -21,18 +23,18 @@ import (
 )
 ```
 
+#### 配置信息
 
-####配置信息
 ```
 const (
-	API    = "https://api.mysubmail.com/mms/xsend"
+	API    = "https://api-v4.mysubmail.com/mms/xsend"
 	APPID  = "10***"
 	APPKEY = "f8a5**********************778df"
 )
 ```
 
+#### 非加密代码示例
 
-####非加密代码示例
 ```
     vars := make(map[string]string)
 	vars["name"] = "张先生"
@@ -58,7 +60,8 @@ const (
 
 
 
-####加密代码示例
+#### 加密代码示例
+
 ```
     vars := make(map[string]string)
 	vars["name"] = "张先生"
@@ -74,7 +77,7 @@ const (
 	bs, _ := json.Marshal(vars)
 	postdata["vars"] = string(bs)
 	//获取服务器时间戳，该时间戳为 UNIX 时间戳，也可以自己生成
-	q, _ := http.Get("https://api.mysubmail.com/service/timestamp")
+	q, _ := http.Get("https://api-v4.mysubmail.com/service/timestamp")
 	r, _ := ioutil.ReadAll(q.Body)
 	m := make(map[string]float64)
 	json.Unmarshal(r, &amp;m)
