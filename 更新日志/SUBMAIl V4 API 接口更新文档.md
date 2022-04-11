@@ -41,6 +41,12 @@ SUBMAIL API V4 是基于 API V3 的重构，大幅提高了系统稳定性和运
 
 新版本在原有的 `xml` 和 `json` 返回码的基础上增加了`yaml` 格式返回码，要使用 `yaml` 返回码，请在 API 接口的结尾使用 `.yaml` 后缀; 例：`https://api-v4.mysubmail.com/service/timestamp.yaml`
 
+新增 SHA256 数字签名模式
+
+
+
+
+
 ------
 
 
