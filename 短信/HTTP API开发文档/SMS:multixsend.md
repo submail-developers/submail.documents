@@ -190,16 +190,12 @@ appid=your_app_id
         "status":"success",
         "to":"15*********",
         "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-        "fee":1,
-        "sms_credits": "21128",
-        "transactional_sms_credits": "0"
+        "fee":1
     },{
         "status":"success",
         "to":"18*********",
         "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-        "fee":1,
-        "sms_credits": "21127",
-        "transactional_sms_credits": "0"
+        "fee":1
     }
 ]
 ```
@@ -218,9 +214,7 @@ appid=your_app_id
     },{
         "status":"success",
         "to":"18*********",
-        "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-        "sms_credits": "21128",
-        "transactional_sms_credits": "0"
+        "send_id":"093c0a7df143c087d6cba9cdf0cf3738"
     }
 ]
 ```

@@ -114,9 +114,7 @@ appid=your_app_id
 {
     "status": "success",
     "send_id": "c2f0e679ad8dxxxxxf6cb71bf2925665e0",
-    "fee": 1,
-    "sms_credits": "21129",
-    "transactional_sms_credits": "0"
+    "fee": 1
 }
 ```
 
@@ -142,9 +140,7 @@ curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;project=ThJBE4&amp;signature=y
 {
     "status": "success",
     "send_id": "c2f0e679ad8dxxxxxf6cb71bf2925665e0",
-    "fee": 1,
-    "sms_credits": "21129",
-    "transactional_sms_credits": "0"
+    "fee": 1
 }
 ```
 
@@ -163,9 +159,7 @@ curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;project=ThJBE4&amp;signature=y
 {
     "status": "success",
     "send_id": "c2f0e679ad8dxxxxxf6cb71bf2925665e0",
-    "fee": 1,
-    "sms_credits": "21129",
-    "transactional_sms_credits": "0"
+    "fee": 1
 }
 ```
 
