@@ -88,10 +88,11 @@ signature=your_app_key
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/mms/multixsend.json` **(默认)** |
+| `json` | `https://api-v4.mysubmail.com/mms/multixsend.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/mms/multixsend.xml`            |
+| `yaml` | `https://api-v4.mysubmail.com/mms/multixsend.yaml`           |
 
----
+------
 
 <br>
 

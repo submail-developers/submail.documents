@@ -26,10 +26,12 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/internationalsms/xsend.json`（默认） |
+| `json` | `https://api-v4.mysubmail.com/internationalsms/xsend.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/internationalsms/xsend.xml`    |
+| `yaml` | `https://api-v4.mysubmail.com/internationalsms/xsend.yaml`   |
 
----
+------
+
 <br>
 
 ### **http 请求方式**

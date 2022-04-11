@@ -26,12 +26,14 @@
 
 <br>
 
-| 格式   | URL                                                          |
-| ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/service/status.json `**（默认）** |
-| `xml`  | `https://api-v4.mysubmail.com/service/status.xml`            |
+| 格式   | URL                                                        |
+| ------ | ---------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/service/status.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/service/status.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/service/status.yaml`         |
 
----
+------
+
 <br>
 
 ### **http 请求方式**

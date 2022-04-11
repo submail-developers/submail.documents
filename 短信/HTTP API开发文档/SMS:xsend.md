@@ -35,8 +35,10 @@
 | ------ | ----------------------------------------------------- |
 | `json` | `https://api-v4.mysubmail.com/sms/xsend.json`（默认） |
 | `xml`  | `https://api-v4.mysubmail.com/sms/xsend.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/sms/xsend.yaml`         |
 
 ------
+
 <br>
 
 ### **http 请求方式**

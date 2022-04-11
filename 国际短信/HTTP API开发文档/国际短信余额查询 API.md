@@ -30,8 +30,11 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/balance/internationalsms.json`（默认） |
+| `json` | `https://api-v4.mysubmail.com/balance/internationalsms.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/balance/internationalsms.xml`  |
+| `yaml` | `https://api-v4.mysubmail.com/balance/internationalsms.yaml` |
+
+------
 
 <br>
 

@@ -37,8 +37,9 @@
 | ------ | ------------------------------------------------------ |
 | `json` | `https://api-v4.mysubmail.com/mail/xsend.json`（默认） |
 | `xml`  | `https://api-v4.mysubmail.com/mail/xsend.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/mail/xsend.yaml`         |
 
----
+------
 
 <br>
 

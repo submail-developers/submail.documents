@@ -87,12 +87,16 @@ signature=your_app_key
 ###  **支持格式**
 <br>
 
+<br>
+
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/sms/multixsend.json `**(默认)** |
+| `json` | `https://api-v4.mysubmail.com/sms/multixsend.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/sms/multixsend.xml`            |
+| `yaml` | `https://api-v4.mysubmail.com/sms/multixsend.yaml`           |
 
 ------
+
 <br>
 
 ### **http 请求方式**

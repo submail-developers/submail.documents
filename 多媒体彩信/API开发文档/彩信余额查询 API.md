@@ -30,14 +30,13 @@
 
 <br>
 
+| 格式   | URL                                                          |
+| ------ | ------------------------------------------------------------ |
+| `json` | `https://api-v4.mysubmail.com/balance/mms.json `**（默认）** |
+| `xml`  | `https://api-v4.mysubmail.com/balance/mms.xml`               |
+| `yaml` | `https://api-v4.mysubmail.com/balance/mms.yaml`              |
 
-
-| 格式   | URL                                                       |
-| ------ | --------------------------------------------------------- |
-| `json` | `https://api-v4.mysubmail.com/balance/mms.json`**(默认)** |
-| `xml`  | `https://api-v4.mysubmail.com/balance/mms.xml`            |
-
----
+------
 
 <br>
 

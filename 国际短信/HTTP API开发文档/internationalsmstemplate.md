@@ -36,6 +36,7 @@
 | ------ | ------------------------------------------------------------ |
 | `json` | `https://api-v4.mysubmail.com/internationalsms/template.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/internationalsms/template.xml` |
+| `yaml` | `https://api-v4.mysubmail.com/internationalsms/template.yaml` |
 
 ------
 

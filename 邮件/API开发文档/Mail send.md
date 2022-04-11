@@ -32,8 +32,9 @@
 | ------ | ----------------------------------------------------- |
 | `json` | `https://api-v4.mysubmail.com/mail/send.json`（默认） |
 | `xml`  | `https://api-v4.mysubmail.com/mail/send.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/mail/send.yaml`         |
 
----
+------
 
 <br>
 

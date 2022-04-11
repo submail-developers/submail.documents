@@ -28,8 +28,9 @@
 | ------ | ------------------------------------------------------- |
 | `json` | `https://api-v4.mysubmail.com/voice/xsend.json`（默认） |
 | `xml`  | `https://api-v4.mysubmail.com/voice/xsend.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/voice/xsend.yaml`         |
 
----
+------
 
 <br>
 

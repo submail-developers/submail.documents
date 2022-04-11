@@ -32,14 +32,13 @@
 
 <br>
 
-| 格式   | URL                                                         |
-| ------ | ----------------------------------------------------------- |
-| `json` | `https://api-v4.mysubmail.com/mms/template.json `**(默认)** |
-| `xml`  | `https://api-v4.mysubmail.com/mms/template.xml`             |
+| 格式   | URL                                                          |
+| ------ | ------------------------------------------------------------ |
+| `json` | `https://api-v4.mysubmail.com/mms/template.json `**（默认）** |
+| `xml`  | `https://api-v4.mysubmail.com/mms/template.xml`              |
+| `yaml` | `https://api-v4.mysubmail.com/mms/template.yaml`             |
 
----
-
-
+------
 
 <br>
 

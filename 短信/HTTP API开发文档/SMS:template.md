@@ -30,12 +30,14 @@
 ### **支持格式**
 <br>
 
-| 格式   | URL                                                          |
-| ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/sms/template.json `**（默认）** |
-| `xml`  | `https://api-v4.mysubmail.com/sms/template.xml`              |
+| 格式   | URL                                                      |
+| ------ | -------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/sms/template.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/sms/template.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/sms/template.yaml`         |
 
 ------
+
 <br>
 
 ### **http 请求方式**

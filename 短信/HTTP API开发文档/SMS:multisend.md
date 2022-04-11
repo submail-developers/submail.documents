@@ -81,12 +81,14 @@ signature=your_app_key
 ###  **支持格式**
 <br>
 
-| 格式   | URL                                                       |
-| ------ | --------------------------------------------------------- |
-| `json` | `https://api-v4.mysubmail.com/sms/multisend.json`（默认） |
-| `xml`  | `https://api.mysubmail.com/sms/multisend.xml`             |
+| 格式   | URL                                                          |
+| ------ | ------------------------------------------------------------ |
+| `json` | `https://api-v4.mysubmail.com/sms/multisend.json `**（默认）** |
+| `xml`  | `https://api-v4.mysubmail.com/sms/multisend.xml`             |
+| `yaml` | `https://api-v4.mysubmail.com/sms/multisend.yaml`            |
 
 ------
+
 <br>
 
 ### **http 请求方式**
@@ -158,7 +160,7 @@ PS:大多数的语言都有专属的JSON解析器（ ENCODING 和 DECODEING 方�
 ##### POST URL
 
 ```
-https://api.mysubmail.com/sms/multisend.json
+https://api-v4.mysubmail.com/multisend.json
 ```
 
 <br>

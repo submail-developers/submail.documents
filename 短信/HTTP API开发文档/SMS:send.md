@@ -26,13 +26,13 @@
 
 <br>
 
-| 格式   | URL                                                       |
-| ------ | --------------------------------------------------------- |
-| `json` | `https://api-v4.mysubmail.com/sms/send.json `**（默认）** |
-| `xml`  | `https://api-v4.mysubmail.com/sms/send.xml`               |
+| 格式   | URL                                                  |
+| ------ | ---------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/sms/send.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/sms/send.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/sms/send.yaml`         |
 
 ------
-
 
 <br>
 

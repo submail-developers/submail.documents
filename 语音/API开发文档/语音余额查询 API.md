@@ -32,8 +32,10 @@
 | ------ | --------------------------------------------------------- |
 | `json` | `https://api-v4.mysubmail.com/balance/voice.json`（默认） |
 | `xml`  | `https://api-v4.mysubmail.com/balance/voice.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/balance/voice.yaml`         |
 
----
+------
+
 <br>
 
 ### **http 请求方式**

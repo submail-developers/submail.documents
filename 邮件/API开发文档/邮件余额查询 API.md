@@ -28,13 +28,13 @@
 
 <br>
 
+| 格式   | URL                                                      |
+| ------ | -------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/balance/mail.json`（默认） |
+| `xml`  | `https://api-v4.mysubmail.com/balance/mail.xml`          |
+| `yaml` | `https://api-v4.mysubmail.com/balance/mail.yaml`         |
 
-| 格式 | URL                                                    |
-| ---- | ------------------------------------------------------ |
-| json | https://api-v4.mysubmail.com/balance/mail.json（默认） |
-| xml  | https://api-v4.mysubmail.com/balance/mail.xml          |
-
----
+------
 
 <br>
 

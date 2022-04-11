@@ -1,5 +1,3 @@
-
-
 ## API: Service/Timestamp
 
 <br>
@@ -32,10 +30,12 @@ UNIX 时间戳在 SUBMAIL API 中有着非常重要的作用，它是大多数�
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/service/timestamp.json`（默认） |
+| `json` | `https://api-v4.mysubmail.com/service/timestamp.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/service/timestamp.xml`         |
+| `yaml` | `https://api-v4.mysubmail.com/service/timestamp.yaml`        |
 
----
+------
+
 <br>
 
 ### **http 请求方式**

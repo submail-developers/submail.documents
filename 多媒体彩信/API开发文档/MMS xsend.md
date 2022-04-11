@@ -26,12 +26,13 @@
 
 <br>
 
-| 格式   | URL                                                   |
-| ------ | ----------------------------------------------------- |
-| `json` | `https://api-v4.mysubmail.com/mms/xsend.json`（默认） |
-| `xml`  | `https://api-v4.mysubmail.com/mms/xsend.xml`          |
+| 格式   | URL                                                        |
+| ------ | ---------------------------------------------------------- |
+| `json` | `https://api-v4.mysubmail.com/mms/xsend.json `**（默认）** |
+| `xml`  | `https://api-v4.mysubmail.com/mms/xsend.xml`               |
+| `yaml` | `https://api-v4.mysubmail.com/mms/xsend.yaml`              |
 
----
+------
 
 <br>
 

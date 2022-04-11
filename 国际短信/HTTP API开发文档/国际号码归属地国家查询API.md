@@ -30,10 +30,12 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/service/verifyphonenumber.json`（默认） |
+| `json` | `https://api-v4.mysubmail.com/service/verifyphonenumber.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/service/verifyphonenumber.xml` |
+| `yaml` | `https://api-v4.mysubmail.com/service/verifyphonenumber.yaml` |
 
----
+------
+
 <br>
 
 ### **http 请求方式**

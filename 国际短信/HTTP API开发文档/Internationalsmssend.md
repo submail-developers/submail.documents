@@ -22,10 +22,11 @@
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/internationalsms/send.json`（默认） |
+| `json` | `https://api-v4.mysubmail.com/internationalsms/send.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/internationalsms/send.xml`     |
+| `yaml` | `https://api-v4.mysubmail.com/internationalsms/send.yaml`    |
 
----
+------
 
 <br>
 

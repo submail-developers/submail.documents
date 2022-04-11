@@ -90,10 +90,11 @@ appid=your_app_id
 
 | 格式   | URL                                                          |
 | ------ | ------------------------------------------------------------ |
-| `json` | `https://api-v4.mysubmail.com/internationalsms/multixsend.json` **(默认)** |
+| `json` | `https://api-v4.mysubmail.com/internationalsms/multixsend.json `**（默认）** |
 | `xml`  | `https://api-v4.mysubmail.com/internationalsms/multixsend.xml` |
+| `yaml` | `https://api-v4.mysubmail.com/internationalsms/multixsend.yaml` |
 
----
+------
 
 <br>
 
