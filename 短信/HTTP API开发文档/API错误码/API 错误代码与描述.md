@@ -1,4 +1,4 @@
-## API 错误代码与描述
+# API 错误代码与描述
 
 <br>
 
@@ -41,7 +41,7 @@
 | 402      | 请将短信签名控制在40个字符以内。                             | Please limit message signature to 40 characters              |
 | 403      | 短信正文不能为空                                             | Message content cannot be empty                              |
 | 404      | 请将短信内容（加上签名）控制在1000个字符以内。               | Please limit message content and signature to 1000 characters |
-| 405      | 依据当地法律法规，以下’$var’词或短语不能出现在短信中。       | According to local laws and regulations, the following '$var' word or phrase can not appear in a text message |                                                              |
+| 405      | 依据当地法律法规，以下’$var’词或短语不能出现在短信中。       | According to local laws and regulations, the following '$var' word or phrase can not appear in a text message |
 | 406      | 项目标记不能为空                                             | Project ID cannot be empty                                   |
 | 407      | 无效的项目标记                                               | Invalid Project ID                                           |
 | 408      | 你不能向此联系人或此地址簿中包含的联系人发送完全相同的短信。 | You cannot send same messages to this contact or the contact in the address book |

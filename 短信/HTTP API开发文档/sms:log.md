@@ -1,4 +1,4 @@
-## API: SMS/Log
+# API: SMS/Log
 
 <br>
 
@@ -180,4 +180,6 @@ curl -d "appid=your_appid&signature=your_appkey" https://api-v4.mysubmail.com/sm
 <br>
 
 ##### 参阅 [API 错误代码](https://www.mysubmail.com/documents/rK2yh3)
+
+------
 

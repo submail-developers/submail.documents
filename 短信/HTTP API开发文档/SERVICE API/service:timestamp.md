@@ -1,6 +1,4 @@
-
-
-## API: Service/Timestamp
+# API: Service/Timestamp
 
 <br>
 

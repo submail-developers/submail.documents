@@ -1,4 +1,4 @@
-## API: SMS/Reports
+# API: SMS/Reports
 
 <br>
 
@@ -305,3 +305,6 @@ curl -d "appid=your_app_id&star_date=1640100000&end_date=1640200000&signature=yo
 <br>
 
 ##### 参阅 [API 错误代码](https://www.mysubmail.com/documents/rK2yh3)
+
+------
+

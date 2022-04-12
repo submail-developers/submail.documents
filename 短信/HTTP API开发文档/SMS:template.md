@@ -1,4 +1,4 @@
-##  API: SMS/Template
+#  API: SMS/Template
 
 <br>
 

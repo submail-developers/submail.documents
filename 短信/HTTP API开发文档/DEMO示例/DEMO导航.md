@@ -14,7 +14,6 @@
 | [SMS/MultiXSend](https://www.mysubmail.com/documents/4ShQe) | 编辑模版批量群发，低延迟，高并发   |
 | [SMS/Template](https://www.mysubmail.com/documents/Jmjv32)  | 获取、创建、编辑或删除您的短信模板 |
 | [SMS/Balance](https://www.mysubmail.com/documents/iUAVu1)   | 实时查询您账户的短信余额           |
-| [Flash/Xsend](https://www.mysubmail.com/documents/jLZIM3)   | 编辑模版发送闪信                   |
 
 <br>
 
@@ -45,7 +44,6 @@
 | [SMS/MultiXSend](https://www.mysubmail.com/documents/DchU11) | 编辑模版批量群发，低延迟，高并发   |
 | [SMS/Template](https://www.mysubmail.com/documents/DiIR5)    | 获取、创建、编辑或删除您的短信模板 |
 | [SMS/Balance](https://www.mysubmail.com/documents/TL1Bf4)    | 实时查询您账户的短信余额           |
-| [Flash/Xsend](https://www.mysubmail.com/documents/Ejuk2)     | 编辑模版发送闪信                   |
 
 <br>
 
@@ -84,6 +82,19 @@
 | [SMS/Balance](https://www.mysubmail.com/documents/P0zlH4)    | 实时查询您账户的短信余额           |
 
 <br>
+
+## Python
+
+<br>
+
+| 接口                                                         | 用途                               |
+| ------------------------------------------------------------ | ---------------------------------- |
+| [Message/Send](https://www.mysubmail.com/documents/XSNPI1)   | 直接发送，免创建模版，自由度高     |
+| [Message/XSend](https://www.mysubmail.com/documents/tXdKH1)  | 编辑模版发送，低延迟，高并发       |
+| [Message/Multisend](https://www.mysubmail.com/documents/yPhYA2) | 直接批量群发，免创建模版，自由度高 |
+| [Message/MultiXSend](https://www.mysubmail.com/documents/wEyYM3) | 编辑模版批量群发，低延迟，高并发   |
+| [Message/Template](https://www.mysubmail.com/documents/sDCWf) | 获取、创建、编辑或删除您的短信模板 |
+| [Message/Balance](https://www.mysubmail.com/documents/Pzhrg) | 实时查询您账户的短信余额           |
 
 ------
 

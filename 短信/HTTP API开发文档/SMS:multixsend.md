@@ -1,4 +1,4 @@
-## API: SMS/MultiXSend
+# API: SMS/MultiXSend
 
 <br>
 
