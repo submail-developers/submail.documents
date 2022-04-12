@@ -39,12 +39,12 @@
 ### **http 请求方式**
 <br>
 
-| 请求方式     | content-type设置                                             |
-| ------------ | ------------------------------------------------------------ |
-| `post`,`get` | `multipart/form-data、x-www-form-urlencoded、application/json` |
+| 请求方式 | content-type设置                                             |
+| -------- | ------------------------------------------------------------ |
+| `post`   | `multipart/form-data、x-www-form-urlencoded、application/json` |
+| `get`    |                                                              |
 
 ------
-
 
 <br>
 
