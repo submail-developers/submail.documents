@@ -1,4 +1,4 @@
-# DEMO: Template/Post
+# DEMO: Template/Post - 创建短信模板
 
     var request = require('request');
     var crypto = require('crypto');
@@ -35,24 +35,24 @@
 ​    
 ​    //无加密示例
 ​    
-    request.post({
-        url: api, 
-        formData: {
-            appid:appid,
-            signature:appkey,
-            sms_content : "您的验证码是123456，请在6月15日内输入。",
-            sms_title : "title",
-            sms_signature : "【SUBMAIL】"
-        }
-    }, function optionalCallback(err, httpResponse, body) {
-        if (err) {
-            return console.error(err);
-        }
-        console.log(body);
-    });
-    
-    //加密示例
-    
+​    request.post({
+​        url: api, 
+​        formData: {
+​            appid:appid,
+​            signature:appkey,
+​            sms_content : "您的验证码是123456，请在6月15日内输入。",
+​            sms_title : "title",
+​            sms_signature : "【SUBMAIL】"
+​        }
+​    }, function optionalCallback(err, httpResponse, body) {
+​        if (err) {
+​            return console.error(err);
+​        }
+​        console.log(body);
+​    });
+​    
+​    //加密示例
+​    
     request({
         uri: "https://api-v4.mysubmail.com/service/timestamp",
         method: 'GET'

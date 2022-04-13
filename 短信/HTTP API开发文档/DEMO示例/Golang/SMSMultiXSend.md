@@ -1,4 +1,4 @@
-# DEMO: SMS/MultiXSend
+# DEMO: SMS/MultiXSend - 短信模板一对多发送
 
 <br>
 

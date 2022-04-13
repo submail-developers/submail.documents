@@ -1,4 +1,4 @@
-# DEMO: Template/Get
+# DEMO: Template/Get - 获取短信模板
 
     var request = require('request');
     var crypto = require('crypto');
@@ -44,29 +44,29 @@
 ​    
 ​    //加密示例
 ​    
-    request({
-        uri: "https://api-v4.mysubmail.com/service/timestamp",
-        method: 'GET'
-    }, function(error, response, body) {
-        var result = JSON.parse(body);
-        var requestParams = {}
-        requestParams['timestamp'] = result["timestamp"];
-        requestParams['sign_type'] = "md5";
-        requestParams['appid'] = appid;
-        requestParams['template_id'] = "9vFM31";
-        requestParams['signature'] = BuildSignature(requestParams);
-        var paramsEncode = "";
-        for(key in requestParams){
-            paramsEncode += key+"="+requestParams[key]+"&amp;"
-        }
-        paramsEncode = paramsEncode.substring(0, paramsEncode.length-1);
-        request({
-            url: api+"?"+paramsEncode, 
-            method: 'GET'
-        }, function optionalCallback(err, httpResponse, body) {
-            if (err) {
-                return console.error(err);
-            }
-            console.log(body);
-        });
-    });
+​    request({
+​        uri: "https://api-v4.mysubmail.com/service/timestamp",
+​        method: 'GET'
+​    }, function(error, response, body) {
+​        var result = JSON.parse(body);
+​        var requestParams = {}
+​        requestParams['timestamp'] = result["timestamp"];
+​        requestParams['sign_type'] = "md5";
+​        requestParams['appid'] = appid;
+​        requestParams['template_id'] = "9vFM31";
+​        requestParams['signature'] = BuildSignature(requestParams);
+​        var paramsEncode = "";
+​        for(key in requestParams){
+​            paramsEncode += key+"="+requestParams[key]+"&amp;"
+​        }
+​        paramsEncode = paramsEncode.substring(0, paramsEncode.length-1);
+​        request({
+​            url: api+"?"+paramsEncode, 
+​            method: 'GET'
+​        }, function optionalCallback(err, httpResponse, body) {
+​            if (err) {
+​                return console.error(err);
+​            }
+​            console.log(body);
+​        });
+​    });

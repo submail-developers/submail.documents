@@ -1,4 +1,4 @@
-# DEMO: SMS/MultiSend
+# DEMO: SMS/MultiSend - 短信一对多发送
 
 <br>
 

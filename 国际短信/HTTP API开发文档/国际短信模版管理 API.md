@@ -1,4 +1,4 @@
-##  API: InternationalSMS/Template
+#  API: InternationalSMS/Template-国际短信模版管理
 
 <br>
 
@@ -314,3 +314,4 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;template_id=FsoAF3" 
 ##### 参阅 [API 错误代码](https://www.mysubmail.com/documents/rK2yh3)
 
 ------
+

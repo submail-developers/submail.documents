@@ -1,4 +1,4 @@
-# DEMO:Template/Put
+# DEMO: Template/Put - 更新短信模板
 
 ### 示例代码
 

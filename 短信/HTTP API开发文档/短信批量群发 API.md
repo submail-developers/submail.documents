@@ -1,4 +1,4 @@
-# API: SMS/BatchSend
+# API: SMS/BatchSend - 短信批量群发
 
 <br>
 

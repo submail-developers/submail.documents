@@ -1,4 +1,4 @@
-#  API: SMS/XSend
+#  API: SMS/XSend - 短信模板发送
 
 <br>
 

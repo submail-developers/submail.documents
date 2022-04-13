@@ -1,4 +1,4 @@
-# API: SMS/Send
+# API: SMS/Send - 短信发送
 
 <br>
 

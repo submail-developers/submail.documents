@@ -1,4 +1,4 @@
-# DEMO: Template/Delete
+# DEMO: Template/Delete - 删除短信模板
 
 
 

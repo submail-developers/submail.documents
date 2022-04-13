@@ -1,4 +1,4 @@
-# API: SMS/BatchXSend
+# API: SMS/BatchXSend - 短信批量模板群发
 
 <br>
 

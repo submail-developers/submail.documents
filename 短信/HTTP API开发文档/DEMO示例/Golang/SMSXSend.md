@@ -1,4 +1,4 @@
-# DEMO: SMS/XSend
+# DEMO: SMS/XSend - 短信模板发送
 
 ### 示例代码
 

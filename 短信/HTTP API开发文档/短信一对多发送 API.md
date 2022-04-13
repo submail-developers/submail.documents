@@ -1,4 +1,4 @@
-# API: SMS/MultiSend
+# API: SMS/MultiSend  - 短信一对多发送
 
 <br>
 

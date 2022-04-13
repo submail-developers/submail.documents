@@ -1,4 +1,4 @@
-# DEMO: SMS/XSend
+# DEMO: SMS/XSend - 短信模板发送
 
 - 支持JDK版本：1.5以上 
 - 依赖的jar包：httpclient-4.5.3.jar、httpcore-4.4.14.jar、commons-logging1.1.1.jar、fastjson-1.2.75.jar

@@ -1,4 +1,4 @@
-# DEMO:Template/Post
+# DEMO:Template/Post - 创建短信模板
 
 ### 示例代码
 

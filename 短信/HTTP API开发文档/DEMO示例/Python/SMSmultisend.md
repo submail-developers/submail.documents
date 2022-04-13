@@ -1,4 +1,4 @@
-# DEMO: SMS/multisend
+# DEMO: SMS/MultiSend - 短信一对多发送
 
 ### 示例代码
 
@@ -66,7 +66,7 @@ url = 'https://api-v4.mysubmail.com/sms/multisend.json'
 header = {"Content-type": "application/json"}
 # 获取时间戳
 def gettimestamp():
-    res = requests.get('https://api-v4.mysubmail.com/service/timestamp').json()
+    res = requests.get('httpsapi-v4.mysubmail.comcom/service/timestamp').json()
     timestamp = str(res['timestamp'])
     return timestamp
 

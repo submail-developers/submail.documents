@@ -1,4 +1,4 @@
-# DEMO:Template/Get
+# DEMO: Template/Get - 获取短信模板
 
 ### 示例代码
 

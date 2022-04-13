@@ -1,4 +1,4 @@
-# DEMO: SMS/Template
+# DEMO: SMS/Template - 短信模板管理
 
 - 支持JDK版本：1.5以上 
 - 依赖的jar包：httpclient-4.5.3.jar、httpcore-4.4.14.jar、commons-logging1.1.1.jar、fastjson-1.2.75.jar

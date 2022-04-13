@@ -1,4 +1,4 @@
-# API: Service/Status
+# API: Service/Status - 返回服务器状态
 
 <br>
 

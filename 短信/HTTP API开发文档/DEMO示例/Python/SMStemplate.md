@@ -1,4 +1,4 @@
-# DEMO: SMS/template
+# DEMO: SMS/Template - 短信模板管理
 
 ### 示例代码
 

@@ -1,4 +1,4 @@
-#  API: SMS/Template
+#  API: SMS/Template - 短信模板管理
 
 <br>
 

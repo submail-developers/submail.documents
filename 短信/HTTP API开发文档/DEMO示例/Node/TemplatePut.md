@@ -1,4 +1,4 @@
-# DEMO: Template/Put
+# DEMO: Template/Put - 更新短信模板
 
     var request = require('request');
     var crypto = require('crypto');
@@ -81,3 +81,4 @@
 
 
 ​    
+

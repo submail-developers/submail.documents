@@ -1,4 +1,4 @@
-## 获取项目 ID
+# 获取项目 ID
 
 
 <br>
@@ -36,7 +36,5 @@
 如图所示：
 
 ![](https://libraries.mysubmail.com/public/99040a5a4bb73c0f8ab0495dae84a27f/images/d86f7177bb67c4b51e9157f5a995c40d.png)
-
-------
 
 ------

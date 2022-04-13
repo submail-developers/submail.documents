@@ -1,4 +1,4 @@
-# API: Service/Timestamp
+# API: Service/Timestamp - UNIX 时间戳
 
 <br>
 

@@ -1,4 +1,4 @@
-# DEMO: balance/SMS
+# DEMO: Balance/SMS - 短信余额查询
 
 ### 示例代码
 
@@ -43,7 +43,7 @@ header = {"Content-type": "application/json"}
 
 # 获取时间戳
 def gettimestamp():
-    res = requests.get('https://api-v4.mysubmail.com/service/timestamp').json()
+    res = requests.get('httpsapi-v4.mysubmail.comcom/service/timestamp').json()
     timestamp = str(res['timestamp'])
     return timestamp
 

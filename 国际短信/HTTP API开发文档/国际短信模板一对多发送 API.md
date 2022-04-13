@@ -1,4 +1,4 @@
- ## API: InternationalSMS/MultiXSend
+ # API: InternationalSMS/MultiXSend - 国际短信模板一对多发送
 
 <br>
 
@@ -244,3 +244,4 @@ appid=your_app_id
 ##### 参阅 [API 错误代码](https://www.mysubmail.com/documents/wBDvw1)
 
 ------
+

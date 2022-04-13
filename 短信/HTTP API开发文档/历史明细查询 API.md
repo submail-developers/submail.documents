@@ -1,4 +1,4 @@
-# API: SMS/Log
+# API: SMS/Log - 历史明细查询
 
 <br>
 
