@@ -1,4 +1,4 @@
-## API: balance/mail
+# API: Balance/Mail - 邮件余额查询
 
 <br>
 

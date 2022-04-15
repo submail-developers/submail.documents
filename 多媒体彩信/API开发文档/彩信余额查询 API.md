@@ -1,4 +1,4 @@
-##  API: Balance/MMS
+#  API: Balance/MMS - 彩信余额查询
 
 <br>
 

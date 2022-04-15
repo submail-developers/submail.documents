@@ -1,4 +1,4 @@
-## API：ShortURL
+# API: ShortURL - 短网址
 
 <br>
 
@@ -90,22 +90,22 @@
 
 <br>
 
-| 参数              | 类型         | 必需/可选 | 默认      | 描述                                                         |
-| ----------------- | ------------ | --------- | --------- | ------------------------------------------------------------ |
-| `appid`           | `string`     | `必需`    | 无        | 在 SUBMAIL 应用集成中创建的短网址应用ID                      |
-| `model `          | `string`     | 可选      | url       | 设置 URL 访问模式<br>*设置 URL 参数为 url-scheme 为 App 内链模式（或微信小程序）; 设置参数为 mp-wechat 为微信公众号模式，需授权 SUBMAIL 小程序 |
-| `url `            | `string`     | `必需`    | 无        | 默认目标网址。<br>*您需要处理成短网址的长网址。*             |
-| `group`           | `string`     | 可选      | 无        | 短网址群组ID                                                 |
-| `item`            | `string`     | 可选      | 无        | 自定义标记。<br>*手机号码，国际手机号码，邮件地址，或任意字符串,此参数通常配合 短网址群组功能使用。（最大长度不能超过32位）* |
-| `domain`          | string       | 可选      | link.wiki | 域名选择。<br>*SUBMAIL提供的域名选择：lin**k.wiki、suburl.cn、yc2.co、v2c.co、sw2.co*<br>*企业版支持自定义域名设置。* |
-| `access_password` | `string`     | 可选      | 无        | 访问密码。                                                   |
-| `access_limit`    | `int`        | 可选      | 无        | 访问次数限制。                                               |
-| `expire`          | `int`        | 可选      | 无        | 设置短链接过期时间,按小时计算，默认过期时间为当前套餐的最大时长。 |
-| `routes`          | `jsonString` | 可选      | 无        | 短网址路由。<br>*此参数支持对桌面端，移动端，app，机器人的路由跳转操作<br>具体参数示列请参考ShortUrl Routes参数说明* |
-| `tag`             | `string`     | 可选      | 无        | 此参数用于标记一次 API 请求（最大长度不超过 64 位）<br>添加了 tag 参数的 API 请求，会在所有的 SUBHOOK 事件中携带此参数。 |
-| `timestamp`       | UNIX 时间戳  | 可选      | 无        | 参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/ALdk5) >  `Timestamp` UNIX 时间戳 |
-| `sign_type`       | `string`     | 可选      | `normal`  | API 授权模式（  `md5 or sha1 or normal` ）<br>参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/ALdk5) >  授权和验证方式 |
-| `signature`       | `string`     | `必需`    | 无        | 应用密匙 *或* 数字签名<br>参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/ALdk5) >  授权和验证方式 |
+| 参数              | 类型     | 必需/可选 | 默认      | 描述                                                         |
+| ----------------- | -------- | --------- | --------- | ------------------------------------------------------------ |
+| `appid`           | `string` | `必需`    | 无        | 在 SUBMAIL 应用集成中创建的短网址应用ID                      |
+| `model `          | `string` | 可选      | url       | 设置 URL 访问模式<br>*设置 URL 参数为 url-scheme 为 App 内链模式（或微信小程序）; 设置参数为 mp-wechat 为微信公众号模式，需授权 SUBMAIL 小程序 |
+| `url `            | `string` | `必需`    | 无        | 默认目标网址。<br>*您需要处理成短网址的长网址。*             |
+| `group`           | `string` | 可选      | 无        | 短网址群组ID                                                 |
+| `item`            | `string` | 可选      | 无        | 自定义标记。<br>*手机号码，国际手机号码，邮件地址，或任意字符串,此参数通常配合 短网址群组功能使用。（最大长度不能超过32位）* |
+| `domain`          | string   | 可选      | link.wiki | 域名选择。<br>*SUBMAIL提供的域名选择：lin**k.wiki、suburl.cn、yc2.co、v2c.co、sw2.co*<br>*企业版支持自定义域名设置。* |
+| `access_password` | `string` | 可选      | 无        | 访问密码。                                                   |
+| `access_limit`    | `int`    | 可选      | 无        | 访问次数限制。                                               |
+| `expire`          | `int`       | 可选      | 无        | 设置短链接过期时间,按小时计算，默认过期时间为当前套餐的最大时长。
+| `routes`          | `jsonString`| 可选      | 无        | 短网址路由。<br>*此参数支持对桌面端，移动端，app，机器人的路由跳转操作<br>具体参数示列请参考ShortUrl Routes参数说明*|
+| `tag`             | `string`    | 可选      | 无        | 此参数用于标记一次 API 请求（最大长度不超过 64 位）<br>添加了 tag 参数的 API 请求，会在所有的 SUBHOOK 事件中携带此参数。 |
+| `timestamp`       | UNIX 时间戳 | 可选      | 无        | 参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/ALdk5) >  `Timestamp` UNIX 时间戳 |
+| `sign_type`       | `string`    | 可选      | `normal`  | API 授权模式（  `md5 or sha1 or normal` ）<br>参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/ALdk5) >  授权和验证方式 |
+| `signature`       | `string`    | `必需`    | 无        | 应用密匙 *或* 数字签名<br>参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/ALdk5) >  授权和验证方式 |
 
 
 
@@ -409,7 +409,6 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;short_url=http://lin
     "status":"success"
 }
 ```
-
 
 
 

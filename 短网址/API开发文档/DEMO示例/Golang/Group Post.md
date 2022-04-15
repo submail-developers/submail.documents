@@ -1,9 +1,11 @@
-# DEMO:Group/Post
+# DEMO: Group/Post - 创建短网址群组
 
-###示例代码
+### 示例代码
+
 <br>
 
-####依赖
+#### 依赖
+
 ```
 import (
 	"bytes"
@@ -21,8 +23,8 @@ import (
 )
 ```
 
+#### 配置信息
 
-####配置信息
 ```
 const (
 	API    = "https://service.mysubmail.com/shorturl/group"
@@ -31,8 +33,8 @@ const (
 )
 ```
 
+#### 非加密代码示例
 
-####非加密代码示例
 ```
     postdata := make(map[string]string)
 	postdata["appid"] = APPID
@@ -54,7 +56,8 @@ const (
 
 
 
-####加密代码示例
+#### 加密代码示例
+
 ```
     //所需参数
 	postdata := make(map[string]string)

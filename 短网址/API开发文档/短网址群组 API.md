@@ -1,4 +1,4 @@
-## API: shorturl/group 
+# API: ShortURL/Group - 短网址群组
 
  <br>
 
@@ -192,7 +192,6 @@ curl -d "appid=your_appid&amp;signature=your_appkey&amp;name=submail"。https://
 }
 ```
 
-
 ---
 
 
@@ -221,7 +220,6 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;name=submailgroup=3c
 
 
 
-
 ---
 
 
@@ -246,7 +244,6 @@ curl --data "appid=your_appid&amp;signature=your_appkey&amp;group=3c6a3e194526cd
     "status":"success"
 }
 ```
-
 
 ---
 

@@ -1,4 +1,4 @@
-## API 概览
+# API 概览
 <br>
 
 ### **概览**
@@ -9,7 +9,6 @@ SUBMAIL 支持 `json` (默认) 和 `xml` 格式，如果你想要 API 返回码�
 
 API URL 规则 ：
 ##### `https://api-v4.mysubmail.com/[model]/[function].[format]`  
-
 
 ---
 
