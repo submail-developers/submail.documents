@@ -65,11 +65,11 @@ SUBMAIL API V4 是基于 API V3 的重构，大幅提高了系统稳定性和运
 
 ##### 新增接口
 
-- 增加 REPORT 离线分析报告接口  `sms/reports`  查看开发文档
-- 增加群发接口 `sms/batchsend` 与 `sms/batchxsend`  查看开发文档
-- 增加定时任务接口 `sms/timedtask`  查看开发文档
-- 新版日志接口 `sms/log` 查看开发文档
-- `sms/send` 和 `sms/xsend` 单发接口支持 GET 方式提交数据  查看开发文档
+- 增加 REPORT 离线分析报告接口  `sms/reports` （[查看开发文档](https://www.mysubmail.com/documents/Hvmb02)）
+- 增加群发接口 `sms/batchsend` （[查看开发文档](https://www.mysubmail.com/documents/AzD4Z4)）与 `sms/batchxsend`（[查看开发文档](https://www.mysubmail.com/documents/G5KBR)）
+- 增加定时任务接口 `sms/timedtask` （[查看开发文档](https://www.mysubmail.com/documents/AzD4Z4)）
+- 新版日志接口 `sms/log` （[查看开发文档](https://www.mysubmail.com/documents/onhvw)）
+- `sms/send`（[查看开发文档](https://www.mysubmail.com/documents/FppOR3)） 和 `sms/xsend` （[查看开发文档](https://www.mysubmail.com/documents/OOVyh)） 单发接口支持 GET 方式提交数据
 
 <br>
 
@@ -82,7 +82,7 @@ SUBMAIL API V4 是基于 API V3 的重构，大幅提高了系统稳定性和运
 
 ##### 新增 CMPP 协议支持
 
-开放 CMPP 协议接入 ，SUBMAIL CMPP 协议基于中国移动短消息 CMPP 2 通讯协议  查看 CMPP 接入文档
+开放 CMPP 协议接入，SUBMAIL CMPP 协议基于中国移动短消息 CMPP 2 通讯协议（ [CMPP 接入文档](https://www.mysubmail.com/documents/qoRzr1)）
 
 ------
 
@@ -101,7 +101,7 @@ SUBMAIL API V4 是基于 API V3 的重构，大幅提高了系统稳定性和运
 
 ##### 新增 SMPP 协议支持
 
-开放 SMPP 协议接入 ，支持 SMPP 3.4 通讯协议  查看 SMPP 接入文档
+开放 SMPP 协议接入 ，支持 SMPP 3.4 通讯协议（[查看 SMPP 接入文档](https://www.mysubmail.com/documents/mJ0Su1)）
 
 ------
 
