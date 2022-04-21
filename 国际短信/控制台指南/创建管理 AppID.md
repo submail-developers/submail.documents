@@ -1,4 +1,4 @@
-## 创建/管理 APPID
+# 创建/管理 AppID
 
  <br>
 
@@ -13,7 +13,6 @@
 点击![img](https://libraries.mysubmail.com/public/99040a5a4bb73c0f8ab0495dae84a27f/images/48223090921c7caf9b013309195b318a.png)，在弹出框中输入名称，然后点击“创建”，即可进行新的 AppID 的创建，如下图。
 
 ![img](https://libraries.mysubmail.com/public/99040a5a4bb73c0f8ab0495dae84a27f/images/0062c4d96ca3d5819c8f23bad3798020.gif)
-
 
 ------
 
