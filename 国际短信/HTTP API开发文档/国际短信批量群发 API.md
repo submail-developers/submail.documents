@@ -1,4 +1,4 @@
-# API: internationalsms/BatchSend - 短信批量群发
+# API: InternationalSMS/BatchSend - 国际短信批量群发
 
 <br>
 
