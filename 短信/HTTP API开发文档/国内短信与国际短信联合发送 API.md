@@ -1,4 +1,4 @@
-# API: SMS/unionsend - 国内短信与国际短信联合发送 API
+# API: SMS/UnionSend - 国内短信与国际短信联合发送
 
 <br>
 

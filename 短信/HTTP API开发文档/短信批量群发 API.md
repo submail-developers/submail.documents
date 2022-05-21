@@ -80,7 +80,7 @@
 | `sign_version` | `string`      | 可选      | 无       | signature加密计算方式<br>(当sign_version传2时，content参数不参与加密计算) |
 | `signature`    | `string`      | `必需`    | 无       | 应用密匙或数字签名<br>参阅 [API授权与验证机制](https://www.mysubmail.com/documents/VBcbe)  \>  授权和验证方式。当sign_type=normal时signature应传appkey的值。 |
 
-#### 
+
 
 ------
 
