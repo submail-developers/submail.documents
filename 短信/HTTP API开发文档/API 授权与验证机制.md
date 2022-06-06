@@ -41,7 +41,7 @@ SUBMAIL  有两种验证方式：密匙明文验证模式和数字签名验证�
 
 2. 创建签名字符串：以`"key=value"`  + `"&amp;"（`连接符）+ `"key=value"` 的方式连接所有参数。此签名字符串类似与  `HTTP GET/POST` 请求时的字符串。
 
-3. 创建签名：在创建的字符串前后加上 APPID 和 APPKEY 拼接签名字符串（以 PHP 为例：`string=appid.appkey.signature.appid.appkey`），然后使用 `md5(string)` 或 `sha1(string)`创建签名。
+3. 创建签名：在创建的字符串前后加上 APPID 和 APPKEY 拼接签名字符串（例：`string=appid+appkey+signature+appid+appkey`），然后使用 `md5(string)` 或 `sha1(string)`创建签名。
 
    <br>
 

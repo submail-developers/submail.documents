@@ -160,7 +160,7 @@ PS:大多数的语言都有专属的JSON解析器（ ENCODING 和 DECODEING 方�
 ##### POST URL
 
 ```
-https://api-v4.mysubmail.com/multisend.json
+https://api-v4.mysubmail.com/multisend
 ```
 
 <br>

@@ -148,21 +148,33 @@ curl -s "https://api-v4.mysubmail.com/sms/template.json?appid=your_appid&amp;sig
 
 ```
 {
-"status": "success",
-"start_row": 1,
-"end_row": 50,
-"templates":[
-	{
-    "template_id": "FIJe14",
-    "sms_title": "账户更改邮箱验证码",
-    "sms_signature": "【SUBMAIL】",
-    "sms_content": "您正在执行更改登录邮箱操作，验证码：@var(code) ，请在工单内提供此验证码",
-    "add_date": "2016-01-08 21:28:04",
-    "edit_date": "2016-01-08 21:28:04",
-    "template_status": "2",
-    "template_status_description": "通过审核"
-       }
-	]
+    "status": "success",
+    "start_row": 1,
+    "end_row": 50,
+    "templates": [
+        {
+            "template_id": "uMnmq2",
+            "sms_title": "",
+            "sms_signature": "【SUBMAIL】",
+            "sms_content": "测试模板 驳回",
+            "add_date": 1654470015,
+            "edit_date": 1654470015,
+            "template_status": "3",
+            "template_status_description": "未通过审核",
+            "template_reject_reson": "您好，您的短信无法通过审核，请联系您的专属客服解决！"
+        },
+        {
+            "template_id": "EJfYNv",
+            "sms_title": "",
+            "sms_signature": "【SUBMAIL】",
+            "sms_content": "测试模板 通过",
+            "add_date": 1654470008,
+            "edit_date": 1654470008,
+            "template_status": "2",
+            "template_status_description": "通过审核"
+        }
+
+         ]
 }
 ```
 
