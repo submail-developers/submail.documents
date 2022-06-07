@@ -77,6 +77,7 @@
 | 参数         | 类型          | 必需/可选 | 默认     | 描述                                                         |
 | ------------ | ------------- | --------- | -------- | ------------------------------------------------------------ |
 | `appid`      | `string`      | `必需`    | 无       | 在 SUBMAIL 应用集成中创建的短信应用ID                        |
+| `app`        | `string`      | `可选`    | 无       | 指定appid，返回该appid下的发送数据                           |
 | `start_date` | `UNIX 时间戳` | `可选`    | 1天前    | 开始时间，unix时间戳，精确到秒 `eg:1640100000`               |
 | `end_date`   | `UNIX 时间戳` | `可选`    | 当前时间 | 结束时间，unix时间戳，精确到秒 `eg:1640100000`               |
 | `to`         | `string`      | `可选`    | 无       | 查询特定的手机号码                                           |
@@ -125,6 +126,7 @@ curl -d "appid=your_appid&signature=your_appkey" https://api-v4.mysubmail.com/sm
             "template_id": "xxx", //模板ID
             "sms_signature": "【xx】",	//短信签名
             "sms_content": "您本次登录的验证码：xxx",	//短信正文
+            "fee": 1, // 计费条数
             "status": "delivered", //发送状态 ，delivered = 成功 ， dropped = 失败 ， pending=未知（运营商未返回）
             "report_state": "DELIVRD", // 运营商返回的实际状态 DELIVRD = 成功，其他均为失败 pending=未知（运营商未返回）
             "location": "广东 广州",  //手机号归属地
@@ -141,6 +143,7 @@ curl -d "appid=your_appid&signature=your_appkey" https://api-v4.mysubmail.com/sm
             "template_id": "xxx",
             "sms_signature": "【xxx】",
             "sms_content": "您本次登录的验证码：xxx",
+          	"fee": 0, //计费条数
             "status": "dropped",
             "report_state": "mk:0012",
             "dropped_reason": "空号/停机", // 失败原因，该参数仅在该条数据失败时返回的原因分析

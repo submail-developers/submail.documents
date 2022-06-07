@@ -90,7 +90,7 @@
 ##### POST URL
 
 ```
-https://api-v4.mysubmail.com/sms/send.json
+https://api-v4.mysubmail.com/sms/send
 ```
 
 <br>
