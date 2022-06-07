@@ -1,4 +1,4 @@
-#  API: InternationalSMS/Template-国际短信模版管理
+#  API: InternationalSMS/Template - 国际短信模版管理
 
 <br>
 

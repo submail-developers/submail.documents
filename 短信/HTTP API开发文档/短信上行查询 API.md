@@ -1,4 +1,4 @@
-# API: SMS/mo - 短信上行查询
+# API: SMS/MO - 短信上行查询
 
 <br>
 
@@ -155,6 +155,8 @@ curl -d "appid=your_appid&signature=your_appkey" https://api-v4.mysubmail.com/sm
 <br>
 
 ##### 参阅 [API 错误代码](https://www.mysubmail.com/documents/rK2yh3)
+
+
 
 ------
 

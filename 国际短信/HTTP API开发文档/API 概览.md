@@ -32,15 +32,25 @@ SUBMAIL API 基于 RESTful API 风格，它具备完整的 HTTP 请求规范，�
 <br>
 ###  **SUBMAIL WEB API**
 <br>
-*   [internationalsms/send](https://www.mysubmail.com/documents/3UQA3) (独立模板国际短信发送 API )
-*   [internationalsms/xsend](https://www.mysubmail.com/documents/87QTB2)( 共享模板国际短信发送 API )
-*   [internationalsms/multixsend](https://www.mysubmail.com/documents/B70hy)(增强国际短信群发短信)
-*   [service/timestamp](https://www.mysubmail.com/documents/mmoHq) ( 服务器 UNIX 时间戳 )
-*   [service/status](https://www.mysubmail.com/documents/c4Gqg2) （服务器状态）
+
+| 接口                                                         | 用途                                           |
+| ------------------------------------------------------------ | ---------------------------------------------- |
+| [InternationalSMS/Send - 国际短信发送](https://www.mysubmail.com/documents/3UQA3) | 根据您提交的短信签名和内容，自动创建模板并发送 |
+| [InternationalSMS/XSend - 国际短信模板发送](https://www.mysubmail.com/documents/87QTB2) | 提前创建短信模版，提交模板 ID 发送             |
+| [InternationalSMS/MultiXSend - 国际短信模板一对多发送](https://www.mysubmail.com/documents/B70hy) | InternationalSMS/XSend 的一对多发送版本        |
+| [InternationalSMS/BatchSend - 国际短信批量群发](https://www.mysubmail.com/documents/yD46O) | InternationalSMS/Send 的批量群发版本           |
+| [InternationalSMS/Template - 国际短信模板管理](https://www.mysubmail.com/documents/DIPbL4) | 获取、创建、编辑或删除您的国际短信模板         |
+| [Balance/InternationalSMS - 国际短信余额查询](https://www.mysubmail.com/documents/gjRXN2) | 实时查询账户的国际短信余额                     |
+| [Service/Verifyphonenumber - 国际短信归属地国家查询](https://www.mysubmail.com/documents/OQCN) | 查询国际手机号码的归属地国家等信息             |
+| [Service/Timestamp - UNIX 时间戳](https://www.mysubmail.com/documents/mmoHq) | 返回服务器 UNIX 时间戳                         |
+| [Service/Status - 返回服务器状态](https://www.mysubmail.com/documents/c4Gqg2) | 返回服务器状态和响应时间                       |
+
+  
 
 ---
 
 <br>
+
 ### **创建应用**
 
 <br>
