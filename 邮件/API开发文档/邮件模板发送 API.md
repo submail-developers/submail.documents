@@ -89,8 +89,8 @@
 | `tag`          | `string`      | `可选`    | 无       | 自定义标签功能，该标签可用作SUBHOOK追踪（32 个字符以内）     |
 | `timestamp`    | `UNIX 时间戳` | `可选`    | 无       | 参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/Xi096)  \>  `Timestamp` UNIX 时间戳 |
 | `sign_type`    | `string`      | `可选`    | `normal` | API 授权模式（  `md5 or sha1 or normal` ）<br>参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/Xi096)  \>  授权和验证方式 |
-| `sign_version` | `string`      | `可选`    | 无       | signature加密计算方式(当sign_version传2时，vars，links参数不参与加密计算) |
-| `signature`    | `string`      | `必需`    | 无       | 应用密匙 *或* 数字签名                                       |
+| `sign_version` | `string`      | `可选`    | 无       | signature加密计算方式(当sign_version传2时，from_name，subject，vars，links参数不参与加密计算) |
+| `signature`    | `string`      | `必需`    | 无       | appkey或数字签名                                             |
 
 <br>
 注意：
@@ -135,7 +135,7 @@ https://api-v4.mysubmail.com/mail/xsend.json
 
 ```
 appid=your_app_id
-&amp;to=leo <leo>
+&amp;to=leo@submail.cn
 &amp;project=ThJBE4
 &amp;signature=your_app_key
 ```
@@ -147,13 +147,13 @@ appid=your_app_id
 
 ```
 {
-    "status":"success",
+    "status": "success",
     "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+        {
+            "to": "leo@submail.cn",
+            "send_id": "e6243d12875942204e757a08c6487e24"
+        }
+    ]
 }
 ```
 
@@ -181,7 +181,7 @@ https://api-v4.mysubmail.com/mail/xsend.json
 
 ```
 appid=your_app_id
-&amp;to=leo <leo>,retro@submail.cn
+&amp;to=leo@submail.cn,retro@submail.cn
 &amp;project=ThJBE4
 &amp;signature=your_app_key
 ```
@@ -192,13 +192,17 @@ appid=your_app_id
 
 ```
 {
-    "status":"success",
+    "status": "success",
     "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+        {
+            "send_id": "adda40cbd0f226c92960e70662859efe",
+            "to": "leo@submail.cn"
+        },
+        {
+            "send_id": "850a4d5022c47aeab18d466575555f0e",
+            "to": "retro@submail.cn"
+        }
+    ]
 }
 ```
 
@@ -207,49 +211,8 @@ appid=your_app_id
 
 
 <br>
-#### 使用地址簿发送一封测试邮件
-
-<br>
-
-##### POST URL
-
-```
-https://api-v4.mysubmail.com/mail/xsend.json
-```
 
 
-<br>
-##### POST DATA
-
-
-```
-appid=your_app_id
-&amp;addressbook=subscribe
-&amp;project=ThJBE4
-&amp;signature=your_app_key
-```
-
-<br>
-##### 返回
-
-
-```
-{
-    "status":"success",
-    "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
-}
-```
-
----
-
-
-
-<br>
 #### 使用 `CURL` 发送一封测试邮件
 
 
@@ -258,7 +221,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
+curl -d 'appid=your_app_id&amp;to=leo@submail.cn&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 <br>
@@ -267,13 +230,13 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;project=ThJBE4&amp;signature=you
 
 ```
 {
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+    "status": "success",
+    "return": [
+        {
+            "to": "leo@submail.cn",
+            "send_id": "e6243d12875942204e757a08c6487e24"
+        }
+    ]
 }
 ```
 
@@ -288,7 +251,7 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;project=ThJBE4&amp;signature=you
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=leo<leo> ,retro@submail.cn&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
+curl -d 'appid=your_app_id&amp;to=leo@submail.cn,retro@submail.cn&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
 ```
 
 <br>
@@ -297,51 +260,21 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> ,retro@submail.cn&amp;&amp;project=Th
 
 ```
 {
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+    "status": "success",
+    "return": [
+        {
+            "send_id": "adda40cbd0f226c92960e70662859efe",
+            "to": "leo@submail.cn"
+        },
+        {
+            "send_id": "850a4d5022c47aeab18d466575555f0e",
+            "to": "retro@submail.cn"
+        }
+    ]
 }
 ```
 
 ---
-
-
-<br>
-#### 使用 `CURL` 发送一封测试邮件,使用地址簿中的收件人
-
-
-<br>
-##### 发送 CURL
-
-```
-curl -d 'appid=your_app_id&amp;addressbook=subscribe&amp;&amp;project=ThJBE4&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/xsend.json
-```
-
-<br>
-##### 返回
-
-
-```
-{
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
-}
-```
-
----
-
-
-<br>
-#### 返回值
 
 <br>
 
@@ -351,13 +284,13 @@ curl -d 'appid=your_app_id&amp;addressbook=subscribe&amp;&amp;project=ThJBE4&amp
 
 ```
 {
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+    "status": "success",
+    "return": [
+        {
+            "to": "leo@submail.cn",
+            "send_id": "e6243d12875942204e757a08c6487e24"
+        }
+    ]
 }
 ```
 

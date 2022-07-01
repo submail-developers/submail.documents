@@ -87,8 +87,8 @@
 | `tag`          | `string`      | 可选      | 无       | 自定义标签功能，该标签可用作SUBHOOK追踪（32 个字符以内）     |
 | `timestamp`    | UNIX 时间戳   | 可选      | 无       | 参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/Xi096)  \>  `Timestamp` UNIX 时间戳 |
 | `sign_type`    | `string`      | 可选      | `normal` | API 授权模式（  `md5 or sha1 or normal` ）<br>参阅 [API 授权与验证机制](https://www.mysubmail.com/documents/Xi096)  \>  授权和验证方式 |
-| `sign_version` | `string`      | 可选      | 无       | signature加密计算方式(当sign_version传2时，text，html，vars，links，attachments参数不参与加密计算) |
-| `signature`    | `string`      | 必需      | 无       | 应用密匙 _或 _数字签名                                       |
+| `sign_version` | `string`      | 可选      | 无       | signature加密计算方式(当sign_version传2时，from_name，subject，text，html，vars，links，attachments参数不参与加密计算) |
+| `signature`    | `string`      | 必需      | 无       | appkey或数字签名                                             |
 
 <br>
 ```
@@ -117,7 +117,7 @@ PS:大多数的语言都有专属的JSON解析器（ ENCODING 和 DECODEING 方�
 ##### POST URL
 
 ```
-https://api.mysubmail.com/mail/send.json
+https://api-v4.mysubmail.com/mail/send.json
 ```
 
 <br>
@@ -127,7 +127,7 @@ https://api.mysubmail.com/mail/send.json
 
 ```
 appid=your_app_id
-&amp;to=leo <leo>
+&amp;to=leo@submail.cn
 &amp;subject=testing_Subject
 &amp;text=testing_text_body
 &amp;from=no-reply@submail.cn
@@ -140,13 +140,13 @@ appid=your_app_id
 
 ```
 {
-   "status":"success",
-   "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+    "status": "success",
+    "return": [
+        {
+            "send_id": "72d9f280fbd1584d27b5d31acb64b1fd",
+            "to": "leo@submail.cn"
+        }
+    ]
 }
 ```
 
@@ -161,7 +161,7 @@ appid=your_app_id
 ##### POST URL
 
 ```
-https://api.mysubmail.com/mail/send.json
+https://api-v4.mysubmail.com/mail/send.json
 ```
 
 
@@ -171,7 +171,7 @@ https://api.mysubmail.com/mail/send.json
 
 ```
 appid=your_app_id
-&amp;to=leo <leo>,retro@submail.cn
+&amp;to=leo@submail.cn,retro@submail.cn
 &amp;subject=testing_Subject
 &amp;text=testing_text_body
 &amp;from=no-reply@submail.cn
@@ -184,111 +184,24 @@ appid=your_app_id
 
 ```
 {
-    "status":"success",
+    "status": "success",
     "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+        {
+            "send_id": "adda40cbd0f226c92960e70662859efe",
+            "to": "leo@submail.cn"
+        },
+        {
+            "send_id": "850a4d5022c47aeab18d466575555f0e",
+            "to": "retro@submail.cn"
+        }
+    ]
 }
 ```
 
 ---
 
-
-
-<br>
-#### 使用地址簿发送一封测试邮件
 <br>
 
-
-
-##### POST URL
-
-```
-https://api.mysubmail.com/mail/send.json
-```
-
-
-<br>
-##### POST DATA
-
-
-```
-appid=your_app_id
-&amp;addressbook=subscribe
-&amp;subject=testing_Subject
-&amp;text=testing_text_body
-&amp;from=no-reply@submail.cn
-&amp;signature=your_app_key
-```
-
-<br>
-##### 返回
-
-
-```
-{
-    "status":"success",
-    "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
-}
-```
-
----
-
-
-<br>
-#### 发送一封带附件的测试邮件
-<br>
-
-
-##### POST URL
-
-```
-https://api.mysubmail.com/mail/send.json
-```
-
-
-<br>
-##### POST DATA
-
-
-```
-appid=your_app_id
-&amp;to=leo <leo>,retro@submail.cn
-&amp;subject=testing_Subject
-&amp;text=testing_text_body
-&amp;from=no-reply@submail.cn
-&amp;attachments[]=/path/to/file1.txt
-&amp;signature=your_app_key
-```
-
-<br>
-##### 返回
-
-
-```
-{
-    "status":"success",
-    "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
-}
-```
-
----
-
-
-<br>
 #### 使用 `CURL` 发送一封测试邮件
 
 <br>
@@ -296,7 +209,7 @@ appid=your_app_id
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;subject=testing Subject&amp;text=testing text body&amp;from=no-reply@submail.cn&amp;signature=your_app_key' https://api.mysubmail.com/mail/send.json
+curl -d 'appid=your_app_id&amp;to=leo@mysubmail.cn &amp;subject=testing Subject&amp;text=testing text body&amp;from=no-reply@submail.cn&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/send.json
 ```
 
 <br>
@@ -305,13 +218,13 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;subject=testing Subject&amp;text
 
 ```
 {
-    "status":"success",
+    "status": "success",
     "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+        {
+            "send_id": "72d9f280fbd1584d27b5d31acb64b1fd",
+            "to": "leo@submail.cn"
+        }
+    ]
 }
 ```
 
@@ -325,7 +238,7 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> &amp;subject=testing Subject&amp;text
 ##### 发送 CURL
 
 ```
-curl -d 'appid=your_app_id&amp;to=leo<leo> ,retro@submail.cn&amp;subject=testing Subject&amp;text=testing text body&amp;from=no-reply@submail.cn&amp;signature=your_app_key' https://api.mysubmail.com/mail/send.json
+curl -d 'appid=your_app_id&amp;to=leo@submail.cn,retro@submail.cn&amp;subject=testing Subject&amp;text=testing text body&amp;from=no-reply@submail.cn&amp;signature=your_app_key' https://api-v4.mysubmail.com/mail/send.json
 ```
 
 <br>
@@ -334,91 +247,21 @@ curl -d 'appid=your_app_id&amp;to=leo<leo> ,retro@submail.cn&amp;subject=testing
 
 ```
 {
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+    "status": "success",
+    "return": [
+        {
+            "send_id": "adda40cbd0f226c92960e70662859efe",
+            "to": "leo@submail.cn"
+        },
+        {
+            "send_id": "850a4d5022c47aeab18d466575555f0e",
+            "to": "retro@submail.cn"
+        }
+    ]
 }
 ```
 
 ---
-
-<br>
-
-#### 使用 `CURL` 发送一封测试邮件,使用地址簿中的收件人
-
-
-<br>
-
-##### 发送 CURL
-
-```
-curl -d 'appid=your_app_id&amp;addressbook=subscribe&amp;subject=testing Subject&amp;text=testing text body&amp;from=no-reply@submail.cn&amp;signature=your_app_key' https://api.mysubmail.com/mail/send.json
-```
-
-<br>
-##### 返回
-
-
-```
-{
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
-}
-```
-
----
-
-<br>
-
-#### 使用 `CURL` 发送一封带附件的测试邮件
-<br>
-
-
-##### 发送 CURL
-
-```
-curl https://api.mysubmail.com/mail/send.json \
--F appid=your_app_id \
--F to=leo\<leo> \
--F subject="testing subject" \
--F text="testing text body" \
---form-string html="<strong>testing html body</strong>" \
--F from=no-reply@submail.cn \
--F from_name=SUBMAIL \
--F attachments[]=@/path/to/file1.txt \
--F attachments[]=@/path/to/file2.txt \
--F signature=your_app_key \
-```
-
-<br>
-##### 返回
-
-
-```
-{
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
-}
-```
-
----
-
-<br>
-#### 返回值
 
 <br>
 
@@ -429,17 +272,18 @@ curl https://api.mysubmail.com/mail/send.json \
 
 ```
 {
-      "status":"success",
-      "return": [
-       {
-         "send_id": "HstDN4",
-         "to": "eg@eg.com"
-       }
-     ]
+    "status": "success",
+    "return": [
+        {
+            "to": "leo@submail.cn",
+            "send_id": "e180b6f28e8547ea4e47a4f93fd28907"
+        }
+    ]
 }
 ```
 
 <br>
+
 ##### 请求失败
 
 ```
