@@ -23,17 +23,3 @@
 
 ![](https://libraries.mysubmail.com/public/99040a5a4bb73c0f8ab0495dae84a27f/images/7612484bf9bf82086ab061db1c2ad77a.png)
 
----
-
-<br>
-
-### **获取地址薄 ID **
-
-<br>
-
-请前往[地址簿](https://www.mysubmail.com/console/mms/addressbook)页面，每个地址簿左上角都会生成一个独有的模版 ID。我们需通过 API 向该地址簿中的联系人发送时，只需获取该地址簿 ID 既可。
-如图所示：
-
-![](https://libraries.mysubmail.com/public/99040a5a4bb73c0f8ab0495dae84a27f/images/d86f7177bb67c4b51e9157f5a995c40d.png)
-
-------

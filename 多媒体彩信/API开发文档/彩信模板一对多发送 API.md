@@ -181,18 +181,17 @@ appid=your_app_id
 
 ```
 [
-   {
-        "status":"success",
-        "to":"15*********",
-        "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-       "fee":1,
-        "money_account":14197
-    },{
-        "status":"success",
-        "to":"18*********",
-        "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-        "fee":1,
-        "money_account":14196.23
+    {
+        "status": "success",
+        "to": "153xxxxxxx",
+        "send_id": "398164866e2e43b7569b09de7f091ca6",
+        "fee": 0.18
+    },
+    {
+        "status": "success",
+        "to": "191xxxxxxxx",
+        "send_id": "6ac3208ee91047286277e6251d97340b",
+        "fee": 0.18
     }
 ]
 ```
@@ -213,19 +212,18 @@ appid=your_app_id
 
 ```
 [
-   {
-        "status":"success",
-        "to":"15*********",
-        "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-        "fee":1,
-        "money_account":14197
-    },{
-        "status":"success",
-        "to":"18*********",
-        "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-        "fee":1,
-        "money_account":14196.23
+    {
+        "status": "success",
+        "to": "153xxxxxxx",
+        "send_id": "398164866e2e43b7569b09de7f091ca6",
+        "fee": 0.18
     },
+    {
+        "status": "success",
+        "to": "191xxxxxxxx",
+        "send_id": "6ac3208ee91047286277e6251d97340b",
+        "fee": 0.18
+    }
 ]
 ```
 
@@ -235,16 +233,16 @@ appid=your_app_id
 
 ```
 [
-   {
-        "status":"error",
-        "to":"15*********",
-        "code":1xx,
-        "msg":"error message",
-    },{
-        "status":"success",
-        "to":"18*********",
-        "send_id":"093c0a7df143c087d6cba9cdf0cf3738",
-        "money_account":14196.23
+    {
+        "status": "success",
+        "to": "153xxxxxxxx",
+        "send_id": "4fc1bc42215a4ff167aaa3bea8cf5b75",
+        "fee": 0.18
+    },
+    {
+        "status": "error",
+        "code": 252,
+        "msg": "Incorrect recipient message address"
     }
 ]
 ```

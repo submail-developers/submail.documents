@@ -6,7 +6,7 @@
 
 <br>
 
-SUBMAIL 的 `SMTP API` 使用电子邮件协议的自定义指令。开发者通过在邮件头中插入 `x-submail-smtp-api` 指令灵活地控制发送请求，如添加联系人、将地址簿添加至发送队列，或使用文本变量或超链接变量来灵活地控制邮件内容，甚至在 SMTP API 中使用模板。
+SUBMAIL 的 `SMTP API` 使用电子邮件协议的自定义指令。开发者通过在邮件头中插入 `x-submail-smtp-api` 指令灵活地控制发送请求，如添加联系人，使用文本变量或超链接变量来灵活地控制邮件内容，甚至在 SMTP API 中使用模板。
 
 要使用 SUBMAIL `SMTP API`，开发者需要在邮件头中插入` x-submail-smtp-api` 指令，并将请求的参数编码成 JSON 字符串。
 
@@ -18,12 +18,8 @@ SUBMAIL 的 `SMTP API` 使用电子邮件协议的自定义指令。开发者通
 ```
 {
   "to":[
-           "leo <leo>",
+           "leo@submail.cn",
            "retro@submail.cn"
-          ],
- "addressbook":[
-           "subscribe",
-           "WbRfn3"
           ]
 }
 ```
@@ -52,31 +48,9 @@ SUBMAIL 的 `SMTP API` 使用电子邮件协议的自定义指令。开发者通
 ```
 {
    "to":[
-          "leo <leo>",
-          "retro <retro>",
-          "<service>",
+          "leo@submail.cn",
           "account@submail.cn"
           ]
-}
-```
-
----
-
-<br>
-
-### **addressbook 指令**
-
-<br>
-
-`addressbook：`地址簿指令。使用地址簿指令将地址簿中的联系人添加到发送队列，你可以在 addressbook 指令中加入 subscribe 来添加订阅用户，或使用地址簿标示。请参见[获取项目 ID](https://www.mysubmail.com/documents/eFhpI1)。
-
-
-```
-{
-   "addressbook":[
-             "subscribe",
-             "j5lVv1"
-            ]
 }
 ```
 
@@ -151,11 +125,7 @@ SUBMAIL 的 `SMTP API` 使用电子邮件协议的自定义指令。开发者通
 ```
 {
   "to":[
-        "leo <leo>",
-  ],
- "addressbook":[
-        "subscribe",
-        "WbRfn3"
+        "leo@submail.cn",
   ],
   "template":"DKFzD4",
   "vars":{
@@ -183,8 +153,7 @@ use strict;
 use JSON;
 
 my $header = {
-        to => ['leo '],
-        addressbook => ['subscribe','WbRfn3'],
+        to => ['leo@submail.cn'],
         template => 'DKFzD4',
         vars => { 'key1' => 'value', 'key2' => 'value', 'key3' => 'value' },
         links => { 'key1' => 'value', 'key2' => 'value', 'key3' => 'value' }

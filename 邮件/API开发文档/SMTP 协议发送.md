@@ -10,7 +10,7 @@
 
 如果你将要整合 SUBMAIL 的服务到你现有的应用、网站或移动 APP，使用 `SMTP` 是最为简单和快捷。你只需修改你的用户名、密码和 `SMTP` 配置即可完成集成。
 
-SUBMAIL 还提供强大的 `SMTP API` 帮助你更灵活的控制你的发送请求，如添加联系人、将地址簿添加至发送队列，或使用文本变量或超链接变量来灵活地控制邮件内容，甚至在 `SMTP API` 中使用模板。请参阅[SMTP API](https://www.mysubmail.com/documents/2cpYo2)。
+SUBMAIL 还提供强大的 `SMTP API` 帮助你更灵活的控制你的发送请求，使用文本变量或超链接变量来灵活地控制邮件内容，甚至在 `SMTP API` 中使用模板。请参阅[SMTP API](https://www.mysubmail.com/documents/2cpYo2)。
 
 ---
 
@@ -49,16 +49,4 @@ SUBMAIL 还提供强大的 `SMTP API` 帮助你更灵活的控制你的发送请
 
 　
 
-------
-
-<br>
-
-### **参考文档**
-
-<br>
-
-##### [ Ruby Mail 类使用代码示例](https://www.mysubmail.com/chs/blog/view/10)
-
-##### [C# SMTP 发送邮件指引 (.net)](https://www.mysubmail.com/chs/blog/view/12)
-
-------
+##### 

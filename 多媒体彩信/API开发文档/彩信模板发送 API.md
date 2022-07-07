@@ -110,8 +110,7 @@ appid=your_app_id
 {
     "status":"success"
     "send_id":"093c0a7df143c087d6cba9cdf0cf3738"
-    "fee":1,
-    "money_account":14197.23
+    "fee":0.18
 }
 ```
 ---
@@ -133,10 +132,9 @@ curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;&amp;project=ThJBE4&amp;signat
 ##### 返回
 ```
 {
-      "status":"success"
-      "send_id":"093c0a7df143c087d6cba9cdf0cf3738"
-      "fee":1,
-      "money_account":14197
+    "status":"success"
+    "send_id":"093c0a7df143c087d6cba9cdf0cf3738"
+    "fee":0.18
 }
 ```
 
@@ -155,10 +153,9 @@ curl -d 'appid=your_app_id&amp;to=138xxxxxxxx&amp;&amp;project=ThJBE4&amp;signat
 
 ```
 {
-      "status":"success"
-      "send_id":"093c0a7df143c087d6cba9cdf0cf3738"
-      "fee":1,
-      "money_account":14197.23
+    "status":"success"
+    "send_id":"093c0a7df143c087d6cba9cdf0cf3738"
+    "fee":0.18
 }
 ```
 
