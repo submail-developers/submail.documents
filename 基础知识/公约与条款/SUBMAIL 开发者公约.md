@@ -1,4 +1,4 @@
-## SUBMAIL 开发者公约
+# SUBMAIL 开发者公约
 
  <br>
 

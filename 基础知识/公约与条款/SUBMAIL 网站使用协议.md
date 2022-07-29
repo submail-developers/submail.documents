@@ -1,4 +1,4 @@
-##  SUBMAIL 网站使用协议
+#  SUBMAIL 网站使用协议
 
  <br>
 

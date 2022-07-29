@@ -1,6 +1,4 @@
-
-
-## API HTTP 状态码
+# API HTTP 状态码
 
 <br>
 

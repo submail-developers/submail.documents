@@ -1,5 +1,7 @@
 # SUBMAIl SMPP 协议接入文档
 
+
+
 SUBMAIL SMPP 协议基于 SMPP 3.4 通讯协议。 
 参考开发文档：《**Short Message Peer to Peer Protocol Specification v3.4**》 《**CDMA 数字蜂窝移动通信网扩展短消息实体到短消息中心 的接口协议规范 SMPP v3.4** 》
 

@@ -1,5 +1,7 @@
 # SUBMAIl CMPP 协议接入文档
 
+
+
 SUBMAIL CMPP 协议基于中国移动短消息 CMPP 2 通讯协议。 
 参考开发文档：《中国移动通信 互联网短信网关接口协议 (China Mobile Peer to Peer, CMPP) (V2.0)》
 
